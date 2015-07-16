@@ -10,10 +10,192 @@
 		E556A7C91B55F89A007CFCF5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E556A7C81B55F89A007CFCF5 /* main.m */; };
 		E556A7CC1B55F89A007CFCF5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E556A7CB1B55F89A007CFCF5 /* AppDelegate.m */; };
 		E556A7CF1B55F89A007CFCF5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E556A7CE1B55F89A007CFCF5 /* ViewController.m */; };
-		E556A7D21B55F89A007CFCF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E556A7D01B55F89A007CFCF5 /* Main.storyboard */; };
 		E556A7D41B55F89A007CFCF5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E556A7D31B55F89A007CFCF5 /* Images.xcassets */; };
 		E556A7D71B55F89A007CFCF5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E556A7D51B55F89A007CFCF5 /* LaunchScreen.xib */; };
 		E556A7E31B55F89A007CFCF5 /* DeepBreathingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E556A7E21B55F89A007CFCF5 /* DeepBreathingTests.m */; };
+		E58A52301B57408C00E5413D /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E58A522F1B57408C00E5413D /* LoginViewController.m */; };
+		E58A52331B5745B300E5413D /* HomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E58A52321B5745B300E5413D /* HomePageViewController.m */; };
+		E58A52361B57472500E5413D /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E58A52351B57472500E5413D /* UserModel.m */; };
+		E58A52981B574B3800E5413D /* DHConvenienceAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E58A523C1B574B3800E5413D /* DHConvenienceAutoLayout.m */; };
+		E58A52991B574B3800E5413D /* DHFoundationTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E58A523F1B574B3800E5413D /* DHFoundationTool.m */; };
+		E58A529A1B574B3800E5413D /* DHRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E58A52421B574B3800E5413D /* DHRequest.m */; };
+		E58A529B1B574B3800E5413D /* DHThemeSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = E58A52451B574B3800E5413D /* DHThemeSettings.m */; };
+		E58A529C1B574B3800E5413D /* DHBaseTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = E58A52491B574B3800E5413D /* DHBaseTransition.m */; };
+		E58A529D1B574B3800E5413D /* DHNavigationBaseTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = E58A524B1B574B3800E5413D /* DHNavigationBaseTransition.m */; };
+		E58A529E1B574B3800E5413D /* DHPerspectiveNavigationTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = E58A524D1B574B3800E5413D /* DHPerspectiveNavigationTransition.m */; };
+		E58A529F1B574B3800E5413D /* DHPerspectiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = E58A524F1B574B3800E5413D /* DHPerspectiveTransition.m */; };
+		E58A52A01B574B3800E5413D /* DHSystemAppNavigationTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = E58A52511B574B3800E5413D /* DHSystemAppNavigationTransition.m */; };
+		E58A52A11B574B3800E5413D /* DHVector.m in Sources */ = {isa = PBXBuildFile; fileRef = E58A52551B574B3800E5413D /* DHVector.m */; };
+		E58A52A21B574B3800E5413D /* DHButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E58A52591B574B3800E5413D /* DHButton.m */; };
+		E58A52A31B574B3800E5413D /* DHImageTextButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E58A525C1B574B3800E5413D /* DHImageTextButton.m */; };
+		E58A52A41B574B3800E5413D /* DHRadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E58A525F1B574B3800E5413D /* DHRadioButton.m */; };
+		E58A52A51B574B3800E5413D /* DHCaptchaView.m in Sources */ = {isa = PBXBuildFile; fileRef = E58A52621B574B3800E5413D /* DHCaptchaView.m */; };
+		E58A52A61B574B3800E5413D /* DHInfoFillInView.m in Sources */ = {isa = PBXBuildFile; fileRef = E58A52691B574B3800E5413D /* DHInfoFillInView.m */; };
+		E58A52A71B574B3800E5413D /* DHInfoPresentationView.m in Sources */ = {isa = PBXBuildFile; fileRef = E58A526C1B574B3800E5413D /* DHInfoPresentationView.m */; };
+		E58A52A81B574B3800E5413D /* CABasicAnimation+AnimationCompletionBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = E58A52701B574B3800E5413D /* CABasicAnimation+AnimationCompletionBlock.m */; };
+		E58A52A91B574B3800E5413D /* DHGradientRoundedProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = E58A52721B574B3800E5413D /* DHGradientRoundedProgressView.m */; };
+		E58A52AA1B574B3800E5413D /* DHGradientStepProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = E58A52741B574B3800E5413D /* DHGradientStepProgressView.m */; };
+		E58A52AB1B574B3800E5413D /* DHNormalProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = E58A52761B574B3800E5413D /* DHNormalProgressView.m */; };
+		E58A52AC1B574B3800E5413D /* DHProgressAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = E58A52781B574B3800E5413D /* DHProgressAnimation.m */; };
+		E58A52AD1B574B3800E5413D /* DHSegmentedGradientProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = E58A527A1B574B3800E5413D /* DHSegmentedGradientProgressView.m */; };
+		E58A52AE1B574B3800E5413D /* DHSegmentedProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = E58A527C1B574B3800E5413D /* DHSegmentedProgressView.m */; };
+		E58A52AF1B574B3800E5413D /* DHPulldownTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = E58A52801B574B3800E5413D /* DHPulldownTableView.m */; };
+		E58A52B01B574B3800E5413D /* DHRoundedSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = E58A52831B574B3800E5413D /* DHRoundedSelector.m */; };
+		E58A52B11B574B3800E5413D /* DHScanScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = E58A52871B574B3800E5413D /* DHScanScrollView.m */; };
+		E58A52B21B574B3800E5413D /* DHFunctionChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = E58A528A1B574B3800E5413D /* DHFunctionChartView.m */; };
+		E58A52B31B574B3800E5413D /* DHGradientStatisticsView.m in Sources */ = {isa = PBXBuildFile; fileRef = E58A528C1B574B3800E5413D /* DHGradientStatisticsView.m */; };
+		E58A52B41B574B3800E5413D /* DHSegmentedStatisticsView.m in Sources */ = {isa = PBXBuildFile; fileRef = E58A528E1B574B3800E5413D /* DHSegmentedStatisticsView.m */; };
+		E58A52B51B574B3800E5413D /* DHChatTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E58A52911B574B3800E5413D /* DHChatTextField.m */; };
+		E58A52B61B574B3800E5413D /* DHPickerTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E58A52931B574B3800E5413D /* DHPickerTextField.m */; };
+		E58A52B71B574B3800E5413D /* DHDrawerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E58A52961B574B3800E5413D /* DHDrawerViewController.m */; };
+		E58A52B81B574B3800E5413D /* DHViewController.zip in Resources */ = {isa = PBXBuildFile; fileRef = E58A52971B574B3800E5413D /* DHViewController.zip */; };
+		E58A52BB1B574E4500E5413D /* MainTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E58A52BA1B574E4500E5413D /* MainTabViewController.m */; };
+		E58A53561B57506A00E5413D /* 1000-0.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A52BF1B57506A00E5413D /* 1000-0.png */; };
+		E58A53571B57506A00E5413D /* 1000-1.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A52C01B57506A00E5413D /* 1000-1.png */; };
+		E58A53581B57506A00E5413D /* 1001-0.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A52C11B57506A00E5413D /* 1001-0.png */; };
+		E58A53591B57506A00E5413D /* 1001-1.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A52C21B57506A00E5413D /* 1001-1.png */; };
+		E58A535A1B57506A00E5413D /* 1002-0.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A52C31B57506A00E5413D /* 1002-0.png */; };
+		E58A535B1B57506A00E5413D /* 1002-1.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A52C41B57506A00E5413D /* 1002-1.png */; };
+		E58A535C1B57506A00E5413D /* 1003-0.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A52C51B57506A00E5413D /* 1003-0.png */; };
+		E58A535D1B57506A00E5413D /* 1003-1.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A52C61B57506A00E5413D /* 1003-1.png */; };
+		E58A535E1B57506A00E5413D /* 1004-0.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A52C71B57506A00E5413D /* 1004-0.png */; };
+		E58A535F1B57506A00E5413D /* 1004-1.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A52C81B57506A00E5413D /* 1004-1.png */; };
+		E58A53601B57506A00E5413D /* 个人信息.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A52CA1B57506A00E5413D /* 个人信息.png */; };
+		E58A53611B57506A00E5413D /* 侧栏背景.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A52CB1B57506A00E5413D /* 侧栏背景.png */; };
+		E58A53621B57506A00E5413D /* 修改个人信息-未选中.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A52CC1B57506A00E5413D /* 修改个人信息-未选中.png */; };
+		E58A53631B57506A00E5413D /* 修改个人信息-选中.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A52CD1B57506A00E5413D /* 修改个人信息-选中.png */; };
+		E58A53641B57506A00E5413D /* 修改密码.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A52CE1B57506A00E5413D /* 修改密码.png */; };
+		E58A53651B57506A00E5413D /* 关于我们.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A52CF1B57506A00E5413D /* 关于我们.png */; };
+		E58A53661B57506A00E5413D /* 现在就去按钮.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A52D01B57506A00E5413D /* 现在就去按钮.png */; };
+		E58A53671B57506A00E5413D /* 现在就去按钮2.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A52D11B57506A00E5413D /* 现在就去按钮2.png */; };
+		E58A53681B57506A00E5413D /* 确认更换按钮.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A52D21B57506A00E5413D /* 确认更换按钮.png */; };
+		E58A53691B57506A00E5413D /* 确认更换按钮2.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A52D31B57506A00E5413D /* 确认更换按钮2.png */; };
+		E58A536A1B57506A00E5413D /* 评价一下.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A52D41B57506A00E5413D /* 评价一下.png */; };
+		E58A536B1B57506A00E5413D /* 退出登录.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A52D51B57506A00E5413D /* 退出登录.png */; };
+		E58A536C1B57506A00E5413D /* 首页.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A52D61B57506A00E5413D /* 首页.png */; };
+		E58A536D1B57506A00E5413D /* 展开箭头.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A52D81B57506A00E5413D /* 展开箭头.png */; };
+		E58A536E1B57506A00E5413D /* 条件删除按钮.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A52D91B57506A00E5413D /* 条件删除按钮.png */; };
+		E58A536F1B57506A00E5413D /* activityindicator_bgimg.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A52DB1B57506A00E5413D /* activityindicator_bgimg.png */; };
+		E58A53701B57506A00E5413D /* 帮助.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A52DC1B57506A00E5413D /* 帮助.png */; };
+		E58A53711B57506A00E5413D /* 暂无数据-灰色.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A52DD1B57506A00E5413D /* 暂无数据-灰色.png */; };
+		E58A53721B57506A00E5413D /* 暂无数据.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A52DE1B57506A00E5413D /* 暂无数据.png */; };
+		E58A53731B57506A00E5413D /* 登录密码.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A52DF1B57506A00E5413D /* 登录密码.png */; };
+		E58A53741B57506A00E5413D /* 登录按钮点击前.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A52E01B57506A00E5413D /* 登录按钮点击前.png */; };
+		E58A53751B57506A00E5413D /* 登录按钮点击后.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A52E11B57506A00E5413D /* 登录按钮点击后.png */; };
+		E58A53761B57506A00E5413D /* 登录橘色背景图.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A52E21B57506A00E5413D /* 登录橘色背景图.png */; };
+		E58A53771B57506A00E5413D /* 登录用户名.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A52E31B57506A00E5413D /* 登录用户名.png */; };
+		E58A53781B57506A00E5413D /* 网络加载失败-灰色.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A52E41B57506A00E5413D /* 网络加载失败-灰色.png */; };
+		E58A53791B57506A00E5413D /* 网络加载失败.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A52E51B57506A00E5413D /* 网络加载失败.png */; };
+		E58A537A1B57506A00E5413D /* 返回.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A52E61B57506A00E5413D /* 返回.png */; };
+		E58A537B1B57506A00E5413D /* 删除.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A52E81B57506A00E5413D /* 删除.png */; };
+		E58A537C1B57506A00E5413D /* 哮喘收藏_导航.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A52E91B57506A00E5413D /* 哮喘收藏_导航.png */; };
+		E58A537D1B57506A00E5413D /* 哮喘知识单元格背景.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A52EA1B57506A00E5413D /* 哮喘知识单元格背景.png */; };
+		E58A537E1B57506A00E5413D /* 哮喘知识默认配图.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A52EB1B57506A00E5413D /* 哮喘知识默认配图.png */; };
+		E58A537F1B57506A00E5413D /* 心-实底.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A52EC1B57506A00E5413D /* 心-实底.png */; };
+		E58A53801B57506A00E5413D /* 收藏列表按钮.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A52ED1B57506A00E5413D /* 收藏列表按钮.png */; };
+		E58A53811B57506A00E5413D /* 收藏按钮正常.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A52EE1B57506A00E5413D /* 收藏按钮正常.png */; };
+		E58A53821B57506A00E5413D /* 收藏按钮点击.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A52EF1B57506A00E5413D /* 收藏按钮点击.png */; };
+		E58A53831B57506A00E5413D /* 收藏按钮选中.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A52F01B57506A00E5413D /* 收藏按钮选中.png */; };
+		E58A53841B57506A00E5413D /* 收藏按钮选中后点击.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A52F11B57506A00E5413D /* 收藏按钮选中后点击.png */; };
+		E58A53851B57506A00E5413D /* 知识详情默认图.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A52F21B57506A00E5413D /* 知识详情默认图.png */; };
+		E58A53861B57506A00E5413D /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A52F41B57506A00E5413D /* line.png */; };
+		E58A53871B57506A00E5413D /* pick_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A52F51B57506A00E5413D /* pick_bg.png */; };
+		E58A53881B57506A00E5413D /* 删除按钮.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A52F61B57506A00E5413D /* 删除按钮.png */; };
+		E58A53891B57506A00E5413D /* 导航删除按钮.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A52F71B57506A00E5413D /* 导航删除按钮.png */; };
+		E58A538A1B57506A00E5413D /* 扫描按钮.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A52F81B57506A00E5413D /* 扫描按钮.png */; };
+		E58A538B1B57506A00E5413D /* 搜索框.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A52F91B57506A00E5413D /* 搜索框.png */; };
+		E58A538C1B57506A00E5413D /* 放大镜.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A52FA1B57506A00E5413D /* 放大镜.png */; };
+		E58A538D1B57506A00E5413D /* 无序原点.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A52FB1B57506A00E5413D /* 无序原点.png */; };
+		E58A538E1B57506A00E5413D /* 添加按钮.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A52FC1B57506A00E5413D /* 添加按钮.png */; };
+		E58A538F1B57506A00E5413D /* 个人中心按钮_橙色.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A52FE1B57506A00E5413D /* 个人中心按钮_橙色.png */; };
+		E58A53901B57506A00E5413D /* 完成按钮1.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A52FF1B57506A00E5413D /* 完成按钮1.png */; };
+		E58A53911B57506A00E5413D /* 完成按钮2.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A53001B57506A00E5413D /* 完成按钮2.png */; };
+		E58A53921B57506A00E5413D /* 对号按钮.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A53011B57506A00E5413D /* 对号按钮.png */; };
+		E58A53931B57506A00E5413D /* 开始评估按钮1.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A53021B57506A00E5413D /* 开始评估按钮1.png */; };
+		E58A53941B57506A00E5413D /* 开始评估按钮2.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A53031B57506A00E5413D /* 开始评估按钮2.png */; };
+		E58A53951B57506A00E5413D /* 弧线.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A53041B57506A00E5413D /* 弧线.png */; };
+		E58A53961B57506A00E5413D /* 查看评估结果完成按钮1.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A53051B57506A00E5413D /* 查看评估结果完成按钮1.png */; };
+		E58A53971B57506A00E5413D /* 查看评估结果完成按钮2.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A53061B57506A00E5413D /* 查看评估结果完成按钮2.png */; };
+		E58A53981B57506A00E5413D /* 评估1.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A53071B57506A00E5413D /* 评估1.png */; };
+		E58A53991B57506A00E5413D /* 评估2.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A53081B57506A00E5413D /* 评估2.png */; };
+		E58A539A1B57506A00E5413D /* 评估3.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A53091B57506A00E5413D /* 评估3.png */; };
+		E58A539B1B57506A00E5413D /* 评估4.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A530A1B57506A00E5413D /* 评估4.png */; };
+		E58A539C1B57506A00E5413D /* 评估5.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A530B1B57506A00E5413D /* 评估5.png */; };
+		E58A539D1B57506A00E5413D /* 评估结果_完全控制背景.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A530C1B57506A00E5413D /* 评估结果_完全控制背景.png */; };
+		E58A539E1B57506A00E5413D /* 评估结果_未得到控制背景.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A530D1B57506A00E5413D /* 评估结果_未得到控制背景.png */; };
+		E58A539F1B57506A00E5413D /* 评估结果_部分控制背景.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A530E1B57506A00E5413D /* 评估结果_部分控制背景.png */; };
+		E58A53A01B57506A00E5413D /* 评估结果页_完全控制.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A530F1B57506A00E5413D /* 评估结果页_完全控制.png */; };
+		E58A53A11B57506A00E5413D /* 评估结果页_未得到控制.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A53101B57506A00E5413D /* 评估结果页_未得到控制.png */; };
+		E58A53A21B57506A00E5413D /* 评估结果页_部分控制.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A53111B57506A00E5413D /* 评估结果页_部分控制.png */; };
+		E58A53A31B57506A00E5413D /* 进度渐变背景.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A53121B57506A00E5413D /* 进度渐变背景.png */; };
+		E58A53A41B57506A00E5413D /* 间歇状态.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A53131B57506A00E5413D /* 间歇状态.png */; };
+		E58A53A51B57506A00E5413D /* defeat.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A53151B57506A00E5413D /* defeat.png */; };
+		E58A53A61B57506A00E5413D /* defeat_03.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A53161B57506A00E5413D /* defeat_03.png */; };
+		E58A53A71B57506A00E5413D /* defeat_4s.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A53171B57506A00E5413D /* defeat_4s.png */; };
+		E58A53A81B57506A00E5413D /* 个人中心按钮.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A53181B57506A00E5413D /* 个人中心按钮.png */; };
+		E58A53A91B57506A00E5413D /* 其他-评估.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A53191B57506A00E5413D /* 其他-评估.png */; };
+		E58A53AA1B57506A00E5413D /* 其他评估.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A531A1B57506A00E5413D /* 其他评估.png */; };
+		E58A53AB1B57506A00E5413D /* 其他评估点击.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A531B1B57506A00E5413D /* 其他评估点击.png */; };
+		E58A53AC1B57506A00E5413D /* 历史记录按钮.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A531C1B57506A00E5413D /* 历史记录按钮.png */; };
+		E58A53AD1B57506A00E5413D /* 历史记录按钮_橘色.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A531D1B57506A00E5413D /* 历史记录按钮_橘色.png */; };
+		E58A53AE1B57506A00E5413D /* 四周-未选中.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A531E1B57506A00E5413D /* 四周-未选中.png */; };
+		E58A53AF1B57506A00E5413D /* 四周-选中.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A531F1B57506A00E5413D /* 四周-选中.png */; };
+		E58A53B01B57506A00E5413D /* 图表.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A53201B57506A00E5413D /* 图表.png */; };
+		E58A53B11B57506A00E5413D /* 完全控制人形.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A53211B57506A00E5413D /* 完全控制人形.png */; };
+		E58A53B21B57506A00E5413D /* 完全控制点.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A53221B57506A00E5413D /* 完全控制点.png */; };
+		E58A53B31B57506A00E5413D /* 就诊-提醒.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A53231B57506A00E5413D /* 就诊-提醒.png */; };
+		E58A53B41B57506A00E5413D /* 当前-用药.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A53241B57506A00E5413D /* 当前-用药.png */; };
+		E58A53B51B57506A00E5413D /* 当前控制状态.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A53251B57506A00E5413D /* 当前控制状态.png */; };
+		E58A53B61B57506A00E5413D /* 1比4.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A53271B57506A00E5413D /* 1比4.png */; };
+		E58A53B71B57506A00E5413D /* 2比4.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A53281B57506A00E5413D /* 2比4.png */; };
+		E58A53B81B57506A00E5413D /* 3比4.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A53291B57506A00E5413D /* 3比4.png */; };
+		E58A53B91B57506A00E5413D /* 4比4.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A532A1B57506A00E5413D /* 4比4.png */; };
+		E58A53BA1B57506A00E5413D /* 保存.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A532B1B57506A00E5413D /* 保存.png */; };
+		E58A53BB1B57506A00E5413D /* 保存2.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A532C1B57506A00E5413D /* 保存2.png */; };
+		E58A53BC1B57506A00E5413D /* 否.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A532D1B57506A00E5413D /* 否.png */; };
+		E58A53BD1B57506A00E5413D /* 否2.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A532E1B57506A00E5413D /* 否2.png */; };
+		E58A53BE1B57506A00E5413D /* 扳手.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A532F1B57506A00E5413D /* 扳手.png */; };
+		E58A53BF1B57506A00E5413D /* 是.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A53301B57506A00E5413D /* 是.png */; };
+		E58A53C01B57506A00E5413D /* 是2.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A53311B57506A00E5413D /* 是2.png */; };
+		E58A53C11B57506A00E5413D /* 返回按钮.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A53321B57506A00E5413D /* 返回按钮.png */; };
+		E58A53C21B57506A00E5413D /* 我有哮喘按钮.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A53331B57506A00E5413D /* 我有哮喘按钮.png */; };
+		E58A53C31B57506A00E5413D /* 我有哮喘按钮2.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A53341B57506A00E5413D /* 我有哮喘按钮2.png */; };
+		E58A53C41B57506A00E5413D /* 未控制人形.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A53351B57506A00E5413D /* 未控制人形.png */; };
+		E58A53C51B57506A00E5413D /* 未控制点.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A53361B57506A00E5413D /* 未控制点.png */; };
+		E58A53C61B57506A00E5413D /* 背景图遮罩.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A53371B57506A00E5413D /* 背景图遮罩.png */; };
+		E58A53C71B57506A00E5413D /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A53391B57506A00E5413D /* 1.png */; };
+		E58A53C81B57506A00E5413D /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A533A1B57506A00E5413D /* 2.png */; };
+		E58A53C91B57506A00E5413D /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A533B1B57506A00E5413D /* 3.png */; };
+		E58A53CA1B57506A00E5413D /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A533C1B57506A00E5413D /* 4.png */; };
+		E58A53CB1B57506A00E5413D /* 向右箭头.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A533D1B57506A00E5413D /* 向右箭头.png */; };
+		E58A53CC1B57506A00E5413D /* 否_未选中.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A533E1B57506A00E5413D /* 否_未选中.png */; };
+		E58A53CD1B57506A00E5413D /* 否_选中.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A533F1B57506A00E5413D /* 否_选中.png */; };
+		E58A53CE1B57506A00E5413D /* 搜索框2.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A53401B57506A00E5413D /* 搜索框2.png */; };
+		E58A53CF1B57506A00E5413D /* 时间编辑按钮.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A53411B57506A00E5413D /* 时间编辑按钮.png */; };
+		E58A53D01B57506A00E5413D /* 是_未选中.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A53421B57506A00E5413D /* 是_未选中.png */; };
+		E58A53D11B57506A00E5413D /* 是_选中.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A53431B57506A00E5413D /* 是_选中.png */; };
+		E58A53D21B57506A00E5413D /* 横屏图表.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A53441B57506A00E5413D /* 横屏图表.png */; };
+		E58A53D31B57506A00E5413D /* 记录-删除.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A53451B57506A00E5413D /* 记录-删除.png */; };
+		E58A53D41B57506A00E5413D /* 记录-编辑.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A53461B57506A00E5413D /* 记录-编辑.png */; };
+		E58A53D51B57506A00E5413D /* 进度圆环.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A53471B57506A00E5413D /* 进度圆环.png */; };
+		E58A53D61B57506A00E5413D /* 评估状态.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A53481B57506A00E5413D /* 评估状态.png */; };
+		E58A53D71B57506A00E5413D /* 返回_图表.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A53491B57506A00E5413D /* 返回_图表.png */; };
+		E58A53D81B57506A00E5413D /* 部分控制人形.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A534A1B57506A00E5413D /* 部分控制人形.png */; };
+		E58A53D91B57506A00E5413D /* 部分控制点.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A534B1B57506A00E5413D /* 部分控制点.png */; };
+		E58A53DA1B57506A00E5413D /* 首页人形.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A534C1B57506A00E5413D /* 首页人形.png */; };
+		E58A53DB1B57506A00E5413D /* 首页人形4s.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A534D1B57506A00E5413D /* 首页人形4s.png */; };
+		E58A53DC1B57506A00E5413D /* 首页完全控制文字.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A534E1B57506A00E5413D /* 首页完全控制文字.png */; };
+		E58A53DD1B57506A00E5413D /* 首页完全控制文字4s.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A534F1B57506A00E5413D /* 首页完全控制文字4s.png */; };
+		E58A53DE1B57506A00E5413D /* 首页未控制文字.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A53501B57506A00E5413D /* 首页未控制文字.png */; };
+		E58A53DF1B57506A00E5413D /* 首页未控制文字4s.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A53511B57506A00E5413D /* 首页未控制文字4s.png */; };
+		E58A53E01B57506A00E5413D /* 首页部分控制文字.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A53521B57506A00E5413D /* 首页部分控制文字.png */; };
+		E58A53E11B57506A00E5413D /* 首页部分控制文字4s.png in Resources */ = {isa = PBXBuildFile; fileRef = E58A53531B57506A00E5413D /* 首页部分控制文字4s.png */; };
+		E58A53E21B57506A00E5413D /* sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E58A53551B57506A00E5413D /* sound.mp3 */; };
+		E58A53E51B5751D300E5413D /* AttendanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E58A53E41B5751D300E5413D /* AttendanceViewController.m */; };
+		E58A53E81B57520C00E5413D /* KnowledgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E58A53E71B57520C00E5413D /* KnowledgeViewController.m */; };
+		E58A53EB1B57523D00E5413D /* MedicineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E58A53EA1B57523D00E5413D /* MedicineViewController.m */; };
+		E58A53EE1B57527400E5413D /* AssessmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E58A53ED1B57527400E5413D /* AssessmentViewController.m */; };
+		E58A53F21B5756D500E5413D /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E58A53F11B5756D500E5413D /* LeftViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,12 +216,237 @@
 		E556A7CB1B55F89A007CFCF5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		E556A7CD1B55F89A007CFCF5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		E556A7CE1B55F89A007CFCF5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		E556A7D11B55F89A007CFCF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E556A7D31B55F89A007CFCF5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E556A7D61B55F89A007CFCF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		E556A7DC1B55F89A007CFCF5 /* DeepBreathingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeepBreathingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E556A7E11B55F89A007CFCF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E556A7E21B55F89A007CFCF5 /* DeepBreathingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeepBreathingTests.m; sourceTree = "<group>"; };
+		E58A522E1B57408C00E5413D /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		E58A522F1B57408C00E5413D /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		E58A52311B5745B300E5413D /* HomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageViewController.h; sourceTree = "<group>"; };
+		E58A52321B5745B300E5413D /* HomePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageViewController.m; sourceTree = "<group>"; };
+		E58A52341B57472500E5413D /* UserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
+		E58A52351B57472500E5413D /* UserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
+		E58A523B1B574B3800E5413D /* DHConvenienceAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHConvenienceAutoLayout.h; sourceTree = "<group>"; };
+		E58A523C1B574B3800E5413D /* DHConvenienceAutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHConvenienceAutoLayout.m; sourceTree = "<group>"; };
+		E58A523E1B574B3800E5413D /* DHFoundationTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHFoundationTool.h; sourceTree = "<group>"; };
+		E58A523F1B574B3800E5413D /* DHFoundationTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHFoundationTool.m; sourceTree = "<group>"; };
+		E58A52411B574B3800E5413D /* DHRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHRequest.h; sourceTree = "<group>"; };
+		E58A52421B574B3800E5413D /* DHRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHRequest.m; sourceTree = "<group>"; };
+		E58A52441B574B3800E5413D /* DHThemeSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHThemeSettings.h; sourceTree = "<group>"; };
+		E58A52451B574B3800E5413D /* DHThemeSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHThemeSettings.m; sourceTree = "<group>"; };
+		E58A52461B574B3800E5413D /* DHTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHTools.h; sourceTree = "<group>"; };
+		E58A52481B574B3800E5413D /* DHBaseTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHBaseTransition.h; sourceTree = "<group>"; };
+		E58A52491B574B3800E5413D /* DHBaseTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHBaseTransition.m; sourceTree = "<group>"; };
+		E58A524A1B574B3800E5413D /* DHNavigationBaseTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHNavigationBaseTransition.h; sourceTree = "<group>"; };
+		E58A524B1B574B3800E5413D /* DHNavigationBaseTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHNavigationBaseTransition.m; sourceTree = "<group>"; };
+		E58A524C1B574B3800E5413D /* DHPerspectiveNavigationTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHPerspectiveNavigationTransition.h; sourceTree = "<group>"; };
+		E58A524D1B574B3800E5413D /* DHPerspectiveNavigationTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHPerspectiveNavigationTransition.m; sourceTree = "<group>"; };
+		E58A524E1B574B3800E5413D /* DHPerspectiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHPerspectiveTransition.h; sourceTree = "<group>"; };
+		E58A524F1B574B3800E5413D /* DHPerspectiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHPerspectiveTransition.m; sourceTree = "<group>"; };
+		E58A52501B574B3800E5413D /* DHSystemAppNavigationTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHSystemAppNavigationTransition.h; sourceTree = "<group>"; };
+		E58A52511B574B3800E5413D /* DHSystemAppNavigationTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHSystemAppNavigationTransition.m; sourceTree = "<group>"; };
+		E58A52521B574B3800E5413D /* DHTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHTransition.h; sourceTree = "<group>"; };
+		E58A52541B574B3800E5413D /* DHVector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHVector.h; sourceTree = "<group>"; };
+		E58A52551B574B3800E5413D /* DHVector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHVector.m; sourceTree = "<group>"; };
+		E58A52581B574B3800E5413D /* DHButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHButton.h; sourceTree = "<group>"; };
+		E58A52591B574B3800E5413D /* DHButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHButton.m; sourceTree = "<group>"; };
+		E58A525B1B574B3800E5413D /* DHImageTextButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHImageTextButton.h; sourceTree = "<group>"; };
+		E58A525C1B574B3800E5413D /* DHImageTextButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHImageTextButton.m; sourceTree = "<group>"; };
+		E58A525E1B574B3800E5413D /* DHRadioButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHRadioButton.h; sourceTree = "<group>"; };
+		E58A525F1B574B3800E5413D /* DHRadioButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHRadioButton.m; sourceTree = "<group>"; };
+		E58A52611B574B3800E5413D /* DHCaptchaView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHCaptchaView.h; sourceTree = "<group>"; };
+		E58A52621B574B3800E5413D /* DHCaptchaView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHCaptchaView.m; sourceTree = "<group>"; };
+		E58A52681B574B3800E5413D /* DHInfoFillInView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHInfoFillInView.h; sourceTree = "<group>"; };
+		E58A52691B574B3800E5413D /* DHInfoFillInView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHInfoFillInView.m; sourceTree = "<group>"; };
+		E58A526B1B574B3800E5413D /* DHInfoPresentationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHInfoPresentationView.h; sourceTree = "<group>"; };
+		E58A526C1B574B3800E5413D /* DHInfoPresentationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHInfoPresentationView.m; sourceTree = "<group>"; };
+		E58A526F1B574B3800E5413D /* CABasicAnimation+AnimationCompletionBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CABasicAnimation+AnimationCompletionBlock.h"; sourceTree = "<group>"; };
+		E58A52701B574B3800E5413D /* CABasicAnimation+AnimationCompletionBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CABasicAnimation+AnimationCompletionBlock.m"; sourceTree = "<group>"; };
+		E58A52711B574B3800E5413D /* DHGradientRoundedProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHGradientRoundedProgressView.h; sourceTree = "<group>"; };
+		E58A52721B574B3800E5413D /* DHGradientRoundedProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHGradientRoundedProgressView.m; sourceTree = "<group>"; };
+		E58A52731B574B3800E5413D /* DHGradientStepProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHGradientStepProgressView.h; sourceTree = "<group>"; };
+		E58A52741B574B3800E5413D /* DHGradientStepProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHGradientStepProgressView.m; sourceTree = "<group>"; };
+		E58A52751B574B3800E5413D /* DHNormalProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHNormalProgressView.h; sourceTree = "<group>"; };
+		E58A52761B574B3800E5413D /* DHNormalProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHNormalProgressView.m; sourceTree = "<group>"; };
+		E58A52771B574B3800E5413D /* DHProgressAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHProgressAnimation.h; sourceTree = "<group>"; };
+		E58A52781B574B3800E5413D /* DHProgressAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHProgressAnimation.m; sourceTree = "<group>"; };
+		E58A52791B574B3800E5413D /* DHSegmentedGradientProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHSegmentedGradientProgressView.h; sourceTree = "<group>"; };
+		E58A527A1B574B3800E5413D /* DHSegmentedGradientProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHSegmentedGradientProgressView.m; sourceTree = "<group>"; };
+		E58A527B1B574B3800E5413D /* DHSegmentedProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHSegmentedProgressView.h; sourceTree = "<group>"; };
+		E58A527C1B574B3800E5413D /* DHSegmentedProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHSegmentedProgressView.m; sourceTree = "<group>"; };
+		E58A527F1B574B3800E5413D /* DHPulldownTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHPulldownTableView.h; sourceTree = "<group>"; };
+		E58A52801B574B3800E5413D /* DHPulldownTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHPulldownTableView.m; sourceTree = "<group>"; };
+		E58A52821B574B3800E5413D /* DHRoundedSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHRoundedSelector.h; sourceTree = "<group>"; };
+		E58A52831B574B3800E5413D /* DHRoundedSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHRoundedSelector.m; sourceTree = "<group>"; };
+		E58A52861B574B3800E5413D /* DHScanScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHScanScrollView.h; sourceTree = "<group>"; };
+		E58A52871B574B3800E5413D /* DHScanScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHScanScrollView.m; sourceTree = "<group>"; };
+		E58A52891B574B3800E5413D /* DHFunctionChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHFunctionChartView.h; sourceTree = "<group>"; };
+		E58A528A1B574B3800E5413D /* DHFunctionChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHFunctionChartView.m; sourceTree = "<group>"; };
+		E58A528B1B574B3800E5413D /* DHGradientStatisticsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHGradientStatisticsView.h; sourceTree = "<group>"; };
+		E58A528C1B574B3800E5413D /* DHGradientStatisticsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHGradientStatisticsView.m; sourceTree = "<group>"; };
+		E58A528D1B574B3800E5413D /* DHSegmentedStatisticsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHSegmentedStatisticsView.h; sourceTree = "<group>"; };
+		E58A528E1B574B3800E5413D /* DHSegmentedStatisticsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHSegmentedStatisticsView.m; sourceTree = "<group>"; };
+		E58A52901B574B3800E5413D /* DHChatTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHChatTextField.h; sourceTree = "<group>"; };
+		E58A52911B574B3800E5413D /* DHChatTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHChatTextField.m; sourceTree = "<group>"; };
+		E58A52921B574B3800E5413D /* DHPickerTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHPickerTextField.h; sourceTree = "<group>"; };
+		E58A52931B574B3800E5413D /* DHPickerTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHPickerTextField.m; sourceTree = "<group>"; };
+		E58A52951B574B3800E5413D /* DHDrawerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHDrawerViewController.h; sourceTree = "<group>"; };
+		E58A52961B574B3800E5413D /* DHDrawerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHDrawerViewController.m; sourceTree = "<group>"; };
+		E58A52971B574B3800E5413D /* DHViewController.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = DHViewController.zip; sourceTree = "<group>"; };
+		E58A52B91B574E4500E5413D /* MainTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabViewController.h; sourceTree = "<group>"; };
+		E58A52BA1B574E4500E5413D /* MainTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabViewController.m; sourceTree = "<group>"; };
+		E58A52BF1B57506A00E5413D /* 1000-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1000-0.png"; sourceTree = "<group>"; };
+		E58A52C01B57506A00E5413D /* 1000-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1000-1.png"; sourceTree = "<group>"; };
+		E58A52C11B57506A00E5413D /* 1001-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1001-0.png"; sourceTree = "<group>"; };
+		E58A52C21B57506A00E5413D /* 1001-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1001-1.png"; sourceTree = "<group>"; };
+		E58A52C31B57506A00E5413D /* 1002-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1002-0.png"; sourceTree = "<group>"; };
+		E58A52C41B57506A00E5413D /* 1002-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1002-1.png"; sourceTree = "<group>"; };
+		E58A52C51B57506A00E5413D /* 1003-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1003-0.png"; sourceTree = "<group>"; };
+		E58A52C61B57506A00E5413D /* 1003-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1003-1.png"; sourceTree = "<group>"; };
+		E58A52C71B57506A00E5413D /* 1004-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1004-0.png"; sourceTree = "<group>"; };
+		E58A52C81B57506A00E5413D /* 1004-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1004-1.png"; sourceTree = "<group>"; };
+		E58A52CA1B57506A00E5413D /* 个人信息.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "个人信息.png"; sourceTree = "<group>"; };
+		E58A52CB1B57506A00E5413D /* 侧栏背景.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "侧栏背景.png"; sourceTree = "<group>"; };
+		E58A52CC1B57506A00E5413D /* 修改个人信息-未选中.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "修改个人信息-未选中.png"; sourceTree = "<group>"; };
+		E58A52CD1B57506A00E5413D /* 修改个人信息-选中.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "修改个人信息-选中.png"; sourceTree = "<group>"; };
+		E58A52CE1B57506A00E5413D /* 修改密码.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "修改密码.png"; sourceTree = "<group>"; };
+		E58A52CF1B57506A00E5413D /* 关于我们.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "关于我们.png"; sourceTree = "<group>"; };
+		E58A52D01B57506A00E5413D /* 现在就去按钮.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "现在就去按钮.png"; sourceTree = "<group>"; };
+		E58A52D11B57506A00E5413D /* 现在就去按钮2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "现在就去按钮2.png"; sourceTree = "<group>"; };
+		E58A52D21B57506A00E5413D /* 确认更换按钮.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "确认更换按钮.png"; sourceTree = "<group>"; };
+		E58A52D31B57506A00E5413D /* 确认更换按钮2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "确认更换按钮2.png"; sourceTree = "<group>"; };
+		E58A52D41B57506A00E5413D /* 评价一下.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "评价一下.png"; sourceTree = "<group>"; };
+		E58A52D51B57506A00E5413D /* 退出登录.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "退出登录.png"; sourceTree = "<group>"; };
+		E58A52D61B57506A00E5413D /* 首页.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "首页.png"; sourceTree = "<group>"; };
+		E58A52D81B57506A00E5413D /* 展开箭头.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "展开箭头.png"; sourceTree = "<group>"; };
+		E58A52D91B57506A00E5413D /* 条件删除按钮.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "条件删除按钮.png"; sourceTree = "<group>"; };
+		E58A52DB1B57506A00E5413D /* activityindicator_bgimg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = activityindicator_bgimg.png; sourceTree = "<group>"; };
+		E58A52DC1B57506A00E5413D /* 帮助.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "帮助.png"; sourceTree = "<group>"; };
+		E58A52DD1B57506A00E5413D /* 暂无数据-灰色.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "暂无数据-灰色.png"; sourceTree = "<group>"; };
+		E58A52DE1B57506A00E5413D /* 暂无数据.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "暂无数据.png"; sourceTree = "<group>"; };
+		E58A52DF1B57506A00E5413D /* 登录密码.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "登录密码.png"; sourceTree = "<group>"; };
+		E58A52E01B57506A00E5413D /* 登录按钮点击前.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "登录按钮点击前.png"; sourceTree = "<group>"; };
+		E58A52E11B57506A00E5413D /* 登录按钮点击后.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "登录按钮点击后.png"; sourceTree = "<group>"; };
+		E58A52E21B57506A00E5413D /* 登录橘色背景图.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "登录橘色背景图.png"; sourceTree = "<group>"; };
+		E58A52E31B57506A00E5413D /* 登录用户名.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "登录用户名.png"; sourceTree = "<group>"; };
+		E58A52E41B57506A00E5413D /* 网络加载失败-灰色.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "网络加载失败-灰色.png"; sourceTree = "<group>"; };
+		E58A52E51B57506A00E5413D /* 网络加载失败.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "网络加载失败.png"; sourceTree = "<group>"; };
+		E58A52E61B57506A00E5413D /* 返回.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "返回.png"; sourceTree = "<group>"; };
+		E58A52E81B57506A00E5413D /* 删除.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "删除.png"; sourceTree = "<group>"; };
+		E58A52E91B57506A00E5413D /* 哮喘收藏_导航.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "哮喘收藏_导航.png"; sourceTree = "<group>"; };
+		E58A52EA1B57506A00E5413D /* 哮喘知识单元格背景.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "哮喘知识单元格背景.png"; sourceTree = "<group>"; };
+		E58A52EB1B57506A00E5413D /* 哮喘知识默认配图.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "哮喘知识默认配图.png"; sourceTree = "<group>"; };
+		E58A52EC1B57506A00E5413D /* 心-实底.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "心-实底.png"; sourceTree = "<group>"; };
+		E58A52ED1B57506A00E5413D /* 收藏列表按钮.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "收藏列表按钮.png"; sourceTree = "<group>"; };
+		E58A52EE1B57506A00E5413D /* 收藏按钮正常.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "收藏按钮正常.png"; sourceTree = "<group>"; };
+		E58A52EF1B57506A00E5413D /* 收藏按钮点击.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "收藏按钮点击.png"; sourceTree = "<group>"; };
+		E58A52F01B57506A00E5413D /* 收藏按钮选中.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "收藏按钮选中.png"; sourceTree = "<group>"; };
+		E58A52F11B57506A00E5413D /* 收藏按钮选中后点击.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "收藏按钮选中后点击.png"; sourceTree = "<group>"; };
+		E58A52F21B57506A00E5413D /* 知识详情默认图.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "知识详情默认图.png"; sourceTree = "<group>"; };
+		E58A52F41B57506A00E5413D /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line.png; sourceTree = "<group>"; };
+		E58A52F51B57506A00E5413D /* pick_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pick_bg.png; sourceTree = "<group>"; };
+		E58A52F61B57506A00E5413D /* 删除按钮.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "删除按钮.png"; sourceTree = "<group>"; };
+		E58A52F71B57506A00E5413D /* 导航删除按钮.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "导航删除按钮.png"; sourceTree = "<group>"; };
+		E58A52F81B57506A00E5413D /* 扫描按钮.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "扫描按钮.png"; sourceTree = "<group>"; };
+		E58A52F91B57506A00E5413D /* 搜索框.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "搜索框.png"; sourceTree = "<group>"; };
+		E58A52FA1B57506A00E5413D /* 放大镜.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "放大镜.png"; sourceTree = "<group>"; };
+		E58A52FB1B57506A00E5413D /* 无序原点.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "无序原点.png"; sourceTree = "<group>"; };
+		E58A52FC1B57506A00E5413D /* 添加按钮.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "添加按钮.png"; sourceTree = "<group>"; };
+		E58A52FE1B57506A00E5413D /* 个人中心按钮_橙色.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "个人中心按钮_橙色.png"; sourceTree = "<group>"; };
+		E58A52FF1B57506A00E5413D /* 完成按钮1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "完成按钮1.png"; sourceTree = "<group>"; };
+		E58A53001B57506A00E5413D /* 完成按钮2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "完成按钮2.png"; sourceTree = "<group>"; };
+		E58A53011B57506A00E5413D /* 对号按钮.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "对号按钮.png"; sourceTree = "<group>"; };
+		E58A53021B57506A00E5413D /* 开始评估按钮1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "开始评估按钮1.png"; sourceTree = "<group>"; };
+		E58A53031B57506A00E5413D /* 开始评估按钮2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "开始评估按钮2.png"; sourceTree = "<group>"; };
+		E58A53041B57506A00E5413D /* 弧线.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "弧线.png"; sourceTree = "<group>"; };
+		E58A53051B57506A00E5413D /* 查看评估结果完成按钮1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "查看评估结果完成按钮1.png"; sourceTree = "<group>"; };
+		E58A53061B57506A00E5413D /* 查看评估结果完成按钮2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "查看评估结果完成按钮2.png"; sourceTree = "<group>"; };
+		E58A53071B57506A00E5413D /* 评估1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "评估1.png"; sourceTree = "<group>"; };
+		E58A53081B57506A00E5413D /* 评估2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "评估2.png"; sourceTree = "<group>"; };
+		E58A53091B57506A00E5413D /* 评估3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "评估3.png"; sourceTree = "<group>"; };
+		E58A530A1B57506A00E5413D /* 评估4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "评估4.png"; sourceTree = "<group>"; };
+		E58A530B1B57506A00E5413D /* 评估5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "评估5.png"; sourceTree = "<group>"; };
+		E58A530C1B57506A00E5413D /* 评估结果_完全控制背景.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "评估结果_完全控制背景.png"; sourceTree = "<group>"; };
+		E58A530D1B57506A00E5413D /* 评估结果_未得到控制背景.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "评估结果_未得到控制背景.png"; sourceTree = "<group>"; };
+		E58A530E1B57506A00E5413D /* 评估结果_部分控制背景.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "评估结果_部分控制背景.png"; sourceTree = "<group>"; };
+		E58A530F1B57506A00E5413D /* 评估结果页_完全控制.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "评估结果页_完全控制.png"; sourceTree = "<group>"; };
+		E58A53101B57506A00E5413D /* 评估结果页_未得到控制.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "评估结果页_未得到控制.png"; sourceTree = "<group>"; };
+		E58A53111B57506A00E5413D /* 评估结果页_部分控制.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "评估结果页_部分控制.png"; sourceTree = "<group>"; };
+		E58A53121B57506A00E5413D /* 进度渐变背景.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "进度渐变背景.png"; sourceTree = "<group>"; };
+		E58A53131B57506A00E5413D /* 间歇状态.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "间歇状态.png"; sourceTree = "<group>"; };
+		E58A53151B57506A00E5413D /* defeat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defeat.png; sourceTree = "<group>"; };
+		E58A53161B57506A00E5413D /* defeat_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defeat_03.png; sourceTree = "<group>"; };
+		E58A53171B57506A00E5413D /* defeat_4s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defeat_4s.png; sourceTree = "<group>"; };
+		E58A53181B57506A00E5413D /* 个人中心按钮.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "个人中心按钮.png"; sourceTree = "<group>"; };
+		E58A53191B57506A00E5413D /* 其他-评估.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "其他-评估.png"; sourceTree = "<group>"; };
+		E58A531A1B57506A00E5413D /* 其他评估.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "其他评估.png"; sourceTree = "<group>"; };
+		E58A531B1B57506A00E5413D /* 其他评估点击.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "其他评估点击.png"; sourceTree = "<group>"; };
+		E58A531C1B57506A00E5413D /* 历史记录按钮.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "历史记录按钮.png"; sourceTree = "<group>"; };
+		E58A531D1B57506A00E5413D /* 历史记录按钮_橘色.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "历史记录按钮_橘色.png"; sourceTree = "<group>"; };
+		E58A531E1B57506A00E5413D /* 四周-未选中.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "四周-未选中.png"; sourceTree = "<group>"; };
+		E58A531F1B57506A00E5413D /* 四周-选中.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "四周-选中.png"; sourceTree = "<group>"; };
+		E58A53201B57506A00E5413D /* 图表.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图表.png"; sourceTree = "<group>"; };
+		E58A53211B57506A00E5413D /* 完全控制人形.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "完全控制人形.png"; sourceTree = "<group>"; };
+		E58A53221B57506A00E5413D /* 完全控制点.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "完全控制点.png"; sourceTree = "<group>"; };
+		E58A53231B57506A00E5413D /* 就诊-提醒.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "就诊-提醒.png"; sourceTree = "<group>"; };
+		E58A53241B57506A00E5413D /* 当前-用药.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "当前-用药.png"; sourceTree = "<group>"; };
+		E58A53251B57506A00E5413D /* 当前控制状态.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "当前控制状态.png"; sourceTree = "<group>"; };
+		E58A53271B57506A00E5413D /* 1比4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1比4.png"; sourceTree = "<group>"; };
+		E58A53281B57506A00E5413D /* 2比4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2比4.png"; sourceTree = "<group>"; };
+		E58A53291B57506A00E5413D /* 3比4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "3比4.png"; sourceTree = "<group>"; };
+		E58A532A1B57506A00E5413D /* 4比4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "4比4.png"; sourceTree = "<group>"; };
+		E58A532B1B57506A00E5413D /* 保存.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "保存.png"; sourceTree = "<group>"; };
+		E58A532C1B57506A00E5413D /* 保存2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "保存2.png"; sourceTree = "<group>"; };
+		E58A532D1B57506A00E5413D /* 否.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "否.png"; sourceTree = "<group>"; };
+		E58A532E1B57506A00E5413D /* 否2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "否2.png"; sourceTree = "<group>"; };
+		E58A532F1B57506A00E5413D /* 扳手.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "扳手.png"; sourceTree = "<group>"; };
+		E58A53301B57506A00E5413D /* 是.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "是.png"; sourceTree = "<group>"; };
+		E58A53311B57506A00E5413D /* 是2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "是2.png"; sourceTree = "<group>"; };
+		E58A53321B57506A00E5413D /* 返回按钮.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "返回按钮.png"; sourceTree = "<group>"; };
+		E58A53331B57506A00E5413D /* 我有哮喘按钮.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我有哮喘按钮.png"; sourceTree = "<group>"; };
+		E58A53341B57506A00E5413D /* 我有哮喘按钮2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我有哮喘按钮2.png"; sourceTree = "<group>"; };
+		E58A53351B57506A00E5413D /* 未控制人形.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "未控制人形.png"; sourceTree = "<group>"; };
+		E58A53361B57506A00E5413D /* 未控制点.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "未控制点.png"; sourceTree = "<group>"; };
+		E58A53371B57506A00E5413D /* 背景图遮罩.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "背景图遮罩.png"; sourceTree = "<group>"; };
+		E58A53391B57506A00E5413D /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		E58A533A1B57506A00E5413D /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		E58A533B1B57506A00E5413D /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		E58A533C1B57506A00E5413D /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		E58A533D1B57506A00E5413D /* 向右箭头.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "向右箭头.png"; sourceTree = "<group>"; };
+		E58A533E1B57506A00E5413D /* 否_未选中.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "否_未选中.png"; sourceTree = "<group>"; };
+		E58A533F1B57506A00E5413D /* 否_选中.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "否_选中.png"; sourceTree = "<group>"; };
+		E58A53401B57506A00E5413D /* 搜索框2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "搜索框2.png"; sourceTree = "<group>"; };
+		E58A53411B57506A00E5413D /* 时间编辑按钮.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "时间编辑按钮.png"; sourceTree = "<group>"; };
+		E58A53421B57506A00E5413D /* 是_未选中.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "是_未选中.png"; sourceTree = "<group>"; };
+		E58A53431B57506A00E5413D /* 是_选中.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "是_选中.png"; sourceTree = "<group>"; };
+		E58A53441B57506A00E5413D /* 横屏图表.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "横屏图表.png"; sourceTree = "<group>"; };
+		E58A53451B57506A00E5413D /* 记录-删除.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "记录-删除.png"; sourceTree = "<group>"; };
+		E58A53461B57506A00E5413D /* 记录-编辑.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "记录-编辑.png"; sourceTree = "<group>"; };
+		E58A53471B57506A00E5413D /* 进度圆环.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "进度圆环.png"; sourceTree = "<group>"; };
+		E58A53481B57506A00E5413D /* 评估状态.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "评估状态.png"; sourceTree = "<group>"; };
+		E58A53491B57506A00E5413D /* 返回_图表.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "返回_图表.png"; sourceTree = "<group>"; };
+		E58A534A1B57506A00E5413D /* 部分控制人形.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "部分控制人形.png"; sourceTree = "<group>"; };
+		E58A534B1B57506A00E5413D /* 部分控制点.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "部分控制点.png"; sourceTree = "<group>"; };
+		E58A534C1B57506A00E5413D /* 首页人形.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "首页人形.png"; sourceTree = "<group>"; };
+		E58A534D1B57506A00E5413D /* 首页人形4s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "首页人形4s.png"; sourceTree = "<group>"; };
+		E58A534E1B57506A00E5413D /* 首页完全控制文字.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "首页完全控制文字.png"; sourceTree = "<group>"; };
+		E58A534F1B57506A00E5413D /* 首页完全控制文字4s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "首页完全控制文字4s.png"; sourceTree = "<group>"; };
+		E58A53501B57506A00E5413D /* 首页未控制文字.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "首页未控制文字.png"; sourceTree = "<group>"; };
+		E58A53511B57506A00E5413D /* 首页未控制文字4s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "首页未控制文字4s.png"; sourceTree = "<group>"; };
+		E58A53521B57506A00E5413D /* 首页部分控制文字.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "首页部分控制文字.png"; sourceTree = "<group>"; };
+		E58A53531B57506A00E5413D /* 首页部分控制文字4s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "首页部分控制文字4s.png"; sourceTree = "<group>"; };
+		E58A53551B57506A00E5413D /* sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound.mp3; sourceTree = "<group>"; };
+		E58A53E31B5751D300E5413D /* AttendanceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttendanceViewController.h; sourceTree = "<group>"; };
+		E58A53E41B5751D300E5413D /* AttendanceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttendanceViewController.m; sourceTree = "<group>"; };
+		E58A53E61B57520C00E5413D /* KnowledgeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KnowledgeViewController.h; sourceTree = "<group>"; };
+		E58A53E71B57520C00E5413D /* KnowledgeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KnowledgeViewController.m; sourceTree = "<group>"; };
+		E58A53E91B57523D00E5413D /* MedicineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MedicineViewController.h; sourceTree = "<group>"; };
+		E58A53EA1B57523D00E5413D /* MedicineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MedicineViewController.m; sourceTree = "<group>"; };
+		E58A53EC1B57527400E5413D /* AssessmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssessmentViewController.h; sourceTree = "<group>"; };
+		E58A53ED1B57527400E5413D /* AssessmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssessmentViewController.m; sourceTree = "<group>"; };
+		E58A53F01B5756D500E5413D /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
+		E58A53F11B5756D500E5413D /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,11 +488,16 @@
 		E556A7C51B55F89A007CFCF5 /* DeepBreathing */ = {
 			isa = PBXGroup;
 			children = (
+				E58A52BC1B57506A00E5413D /* 资源 */,
+				E58A52371B574B2C00E5413D /* ThirdLib */,
+				E58A52381B574B2C00E5413D /* Tools */,
+				E58A52271B573DE400E5413D /* 模块 */,
 				E556A7CA1B55F89A007CFCF5 /* AppDelegate.h */,
 				E556A7CB1B55F89A007CFCF5 /* AppDelegate.m */,
+				E58A52B91B574E4500E5413D /* MainTabViewController.h */,
+				E58A52BA1B574E4500E5413D /* MainTabViewController.m */,
 				E556A7CD1B55F89A007CFCF5 /* ViewController.h */,
 				E556A7CE1B55F89A007CFCF5 /* ViewController.m */,
-				E556A7D01B55F89A007CFCF5 /* Main.storyboard */,
 				E556A7D31B55F89A007CFCF5 /* Images.xcassets */,
 				E556A7D51B55F89A007CFCF5 /* LaunchScreen.xib */,
 				E556A7C61B55F89A007CFCF5 /* Supporting Files */,
@@ -117,6 +529,634 @@
 				E556A7E11B55F89A007CFCF5 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E58A52271B573DE400E5413D /* 模块 */ = {
+			isa = PBXGroup;
+			children = (
+				E58A52341B57472500E5413D /* UserModel.h */,
+				E58A52351B57472500E5413D /* UserModel.m */,
+				E58A53EF1B5756BF00E5413D /* 抽屉 */,
+				E58A52281B573DE400E5413D /* 就诊 */,
+				E58A52291B573DE400E5413D /* 登录 */,
+				E58A522A1B573DE400E5413D /* 知识 */,
+				E58A522B1B573DE400E5413D /* 药物 */,
+				E58A522C1B573DE400E5413D /* 评估 */,
+				E58A522D1B573DE400E5413D /* 首页 */,
+			);
+			path = "模块";
+			sourceTree = "<group>";
+		};
+		E58A52281B573DE400E5413D /* 就诊 */ = {
+			isa = PBXGroup;
+			children = (
+				E58A53E31B5751D300E5413D /* AttendanceViewController.h */,
+				E58A53E41B5751D300E5413D /* AttendanceViewController.m */,
+			);
+			path = "就诊";
+			sourceTree = "<group>";
+		};
+		E58A52291B573DE400E5413D /* 登录 */ = {
+			isa = PBXGroup;
+			children = (
+				E58A522E1B57408C00E5413D /* LoginViewController.h */,
+				E58A522F1B57408C00E5413D /* LoginViewController.m */,
+			);
+			path = "登录";
+			sourceTree = "<group>";
+		};
+		E58A522A1B573DE400E5413D /* 知识 */ = {
+			isa = PBXGroup;
+			children = (
+				E58A53E61B57520C00E5413D /* KnowledgeViewController.h */,
+				E58A53E71B57520C00E5413D /* KnowledgeViewController.m */,
+			);
+			path = "知识";
+			sourceTree = "<group>";
+		};
+		E58A522B1B573DE400E5413D /* 药物 */ = {
+			isa = PBXGroup;
+			children = (
+				E58A53E91B57523D00E5413D /* MedicineViewController.h */,
+				E58A53EA1B57523D00E5413D /* MedicineViewController.m */,
+			);
+			path = "药物";
+			sourceTree = "<group>";
+		};
+		E58A522C1B573DE400E5413D /* 评估 */ = {
+			isa = PBXGroup;
+			children = (
+				E58A53EC1B57527400E5413D /* AssessmentViewController.h */,
+				E58A53ED1B57527400E5413D /* AssessmentViewController.m */,
+			);
+			path = "评估";
+			sourceTree = "<group>";
+		};
+		E58A522D1B573DE400E5413D /* 首页 */ = {
+			isa = PBXGroup;
+			children = (
+				E58A52311B5745B300E5413D /* HomePageViewController.h */,
+				E58A52321B5745B300E5413D /* HomePageViewController.m */,
+			);
+			path = "首页";
+			sourceTree = "<group>";
+		};
+		E58A52371B574B2C00E5413D /* ThirdLib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ThirdLib;
+			sourceTree = "<group>";
+		};
+		E58A52381B574B2C00E5413D /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				E58A52391B574B3800E5413D /* DHTools */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		E58A52391B574B3800E5413D /* DHTools */ = {
+			isa = PBXGroup;
+			children = (
+				E58A523A1B574B3800E5413D /* DHAutoLayout */,
+				E58A523D1B574B3800E5413D /* DHFoundation */,
+				E58A52401B574B3800E5413D /* DHRequest */,
+				E58A52431B574B3800E5413D /* DHTheme */,
+				E58A52461B574B3800E5413D /* DHTools.h */,
+				E58A52471B574B3800E5413D /* DHTransition */,
+				E58A52531B574B3800E5413D /* DHVector */,
+				E58A52561B574B3800E5413D /* DHView */,
+				E58A52941B574B3800E5413D /* DHViewController */,
+				E58A52971B574B3800E5413D /* DHViewController.zip */,
+			);
+			path = DHTools;
+			sourceTree = "<group>";
+		};
+		E58A523A1B574B3800E5413D /* DHAutoLayout */ = {
+			isa = PBXGroup;
+			children = (
+				E58A523B1B574B3800E5413D /* DHConvenienceAutoLayout.h */,
+				E58A523C1B574B3800E5413D /* DHConvenienceAutoLayout.m */,
+			);
+			path = DHAutoLayout;
+			sourceTree = "<group>";
+		};
+		E58A523D1B574B3800E5413D /* DHFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				E58A523E1B574B3800E5413D /* DHFoundationTool.h */,
+				E58A523F1B574B3800E5413D /* DHFoundationTool.m */,
+			);
+			path = DHFoundation;
+			sourceTree = "<group>";
+		};
+		E58A52401B574B3800E5413D /* DHRequest */ = {
+			isa = PBXGroup;
+			children = (
+				E58A52411B574B3800E5413D /* DHRequest.h */,
+				E58A52421B574B3800E5413D /* DHRequest.m */,
+			);
+			path = DHRequest;
+			sourceTree = "<group>";
+		};
+		E58A52431B574B3800E5413D /* DHTheme */ = {
+			isa = PBXGroup;
+			children = (
+				E58A52441B574B3800E5413D /* DHThemeSettings.h */,
+				E58A52451B574B3800E5413D /* DHThemeSettings.m */,
+			);
+			path = DHTheme;
+			sourceTree = "<group>";
+		};
+		E58A52471B574B3800E5413D /* DHTransition */ = {
+			isa = PBXGroup;
+			children = (
+				E58A52481B574B3800E5413D /* DHBaseTransition.h */,
+				E58A52491B574B3800E5413D /* DHBaseTransition.m */,
+				E58A524A1B574B3800E5413D /* DHNavigationBaseTransition.h */,
+				E58A524B1B574B3800E5413D /* DHNavigationBaseTransition.m */,
+				E58A524C1B574B3800E5413D /* DHPerspectiveNavigationTransition.h */,
+				E58A524D1B574B3800E5413D /* DHPerspectiveNavigationTransition.m */,
+				E58A524E1B574B3800E5413D /* DHPerspectiveTransition.h */,
+				E58A524F1B574B3800E5413D /* DHPerspectiveTransition.m */,
+				E58A52501B574B3800E5413D /* DHSystemAppNavigationTransition.h */,
+				E58A52511B574B3800E5413D /* DHSystemAppNavigationTransition.m */,
+				E58A52521B574B3800E5413D /* DHTransition.h */,
+			);
+			path = DHTransition;
+			sourceTree = "<group>";
+		};
+		E58A52531B574B3800E5413D /* DHVector */ = {
+			isa = PBXGroup;
+			children = (
+				E58A52541B574B3800E5413D /* DHVector.h */,
+				E58A52551B574B3800E5413D /* DHVector.m */,
+			);
+			path = DHVector;
+			sourceTree = "<group>";
+		};
+		E58A52561B574B3800E5413D /* DHView */ = {
+			isa = PBXGroup;
+			children = (
+				E58A52571B574B3800E5413D /* DHButton */,
+				E58A52601B574B3800E5413D /* DHCaptchaView */,
+				E58A52631B574B3800E5413D /* DHCollectionView */,
+				E58A52651B574B3800E5413D /* DHGroupMenu */,
+				E58A52661B574B3800E5413D /* DHInfoView */,
+				E58A526D1B574B3800E5413D /* DHMenu */,
+				E58A526E1B574B3800E5413D /* DHProgressView */,
+				E58A527E1B574B3800E5413D /* DHPulldownTableView */,
+				E58A52811B574B3800E5413D /* DHRoundedSelector */,
+				E58A52841B574B3800E5413D /* DHScrollView */,
+				E58A52881B574B3800E5413D /* DHStatisticsView */,
+				E58A528F1B574B3800E5413D /* DHTextField */,
+			);
+			path = DHView;
+			sourceTree = "<group>";
+		};
+		E58A52571B574B3800E5413D /* DHButton */ = {
+			isa = PBXGroup;
+			children = (
+				E58A52581B574B3800E5413D /* DHButton.h */,
+				E58A52591B574B3800E5413D /* DHButton.m */,
+				E58A525A1B574B3800E5413D /* DHImageTextButton */,
+				E58A525D1B574B3800E5413D /* DHRadioButton */,
+			);
+			path = DHButton;
+			sourceTree = "<group>";
+		};
+		E58A525A1B574B3800E5413D /* DHImageTextButton */ = {
+			isa = PBXGroup;
+			children = (
+				E58A525B1B574B3800E5413D /* DHImageTextButton.h */,
+				E58A525C1B574B3800E5413D /* DHImageTextButton.m */,
+			);
+			path = DHImageTextButton;
+			sourceTree = "<group>";
+		};
+		E58A525D1B574B3800E5413D /* DHRadioButton */ = {
+			isa = PBXGroup;
+			children = (
+				E58A525E1B574B3800E5413D /* DHRadioButton.h */,
+				E58A525F1B574B3800E5413D /* DHRadioButton.m */,
+			);
+			path = DHRadioButton;
+			sourceTree = "<group>";
+		};
+		E58A52601B574B3800E5413D /* DHCaptchaView */ = {
+			isa = PBXGroup;
+			children = (
+				E58A52611B574B3800E5413D /* DHCaptchaView.h */,
+				E58A52621B574B3800E5413D /* DHCaptchaView.m */,
+			);
+			path = DHCaptchaView;
+			sourceTree = "<group>";
+		};
+		E58A52631B574B3800E5413D /* DHCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				E58A52641B574B3800E5413D /* RefreshTableHeaderView */,
+			);
+			path = DHCollectionView;
+			sourceTree = "<group>";
+		};
+		E58A52641B574B3800E5413D /* RefreshTableHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RefreshTableHeaderView;
+			sourceTree = "<group>";
+		};
+		E58A52651B574B3800E5413D /* DHGroupMenu */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DHGroupMenu;
+			sourceTree = "<group>";
+		};
+		E58A52661B574B3800E5413D /* DHInfoView */ = {
+			isa = PBXGroup;
+			children = (
+				E58A52671B574B3800E5413D /* DHInfoFillInView */,
+				E58A526A1B574B3800E5413D /* DHInfoPresentationView */,
+			);
+			path = DHInfoView;
+			sourceTree = "<group>";
+		};
+		E58A52671B574B3800E5413D /* DHInfoFillInView */ = {
+			isa = PBXGroup;
+			children = (
+				E58A52681B574B3800E5413D /* DHInfoFillInView.h */,
+				E58A52691B574B3800E5413D /* DHInfoFillInView.m */,
+			);
+			path = DHInfoFillInView;
+			sourceTree = "<group>";
+		};
+		E58A526A1B574B3800E5413D /* DHInfoPresentationView */ = {
+			isa = PBXGroup;
+			children = (
+				E58A526B1B574B3800E5413D /* DHInfoPresentationView.h */,
+				E58A526C1B574B3800E5413D /* DHInfoPresentationView.m */,
+			);
+			path = DHInfoPresentationView;
+			sourceTree = "<group>";
+		};
+		E58A526D1B574B3800E5413D /* DHMenu */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DHMenu;
+			sourceTree = "<group>";
+		};
+		E58A526E1B574B3800E5413D /* DHProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				E58A526F1B574B3800E5413D /* CABasicAnimation+AnimationCompletionBlock.h */,
+				E58A52701B574B3800E5413D /* CABasicAnimation+AnimationCompletionBlock.m */,
+				E58A52711B574B3800E5413D /* DHGradientRoundedProgressView.h */,
+				E58A52721B574B3800E5413D /* DHGradientRoundedProgressView.m */,
+				E58A52731B574B3800E5413D /* DHGradientStepProgressView.h */,
+				E58A52741B574B3800E5413D /* DHGradientStepProgressView.m */,
+				E58A52751B574B3800E5413D /* DHNormalProgressView.h */,
+				E58A52761B574B3800E5413D /* DHNormalProgressView.m */,
+				E58A52771B574B3800E5413D /* DHProgressAnimation.h */,
+				E58A52781B574B3800E5413D /* DHProgressAnimation.m */,
+				E58A52791B574B3800E5413D /* DHSegmentedGradientProgressView.h */,
+				E58A527A1B574B3800E5413D /* DHSegmentedGradientProgressView.m */,
+				E58A527B1B574B3800E5413D /* DHSegmentedProgressView.h */,
+				E58A527C1B574B3800E5413D /* DHSegmentedProgressView.m */,
+				E58A527D1B574B3800E5413D /* labels */,
+			);
+			path = DHProgressView;
+			sourceTree = "<group>";
+		};
+		E58A527D1B574B3800E5413D /* labels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = labels;
+			sourceTree = "<group>";
+		};
+		E58A527E1B574B3800E5413D /* DHPulldownTableView */ = {
+			isa = PBXGroup;
+			children = (
+				E58A527F1B574B3800E5413D /* DHPulldownTableView.h */,
+				E58A52801B574B3800E5413D /* DHPulldownTableView.m */,
+			);
+			path = DHPulldownTableView;
+			sourceTree = "<group>";
+		};
+		E58A52811B574B3800E5413D /* DHRoundedSelector */ = {
+			isa = PBXGroup;
+			children = (
+				E58A52821B574B3800E5413D /* DHRoundedSelector.h */,
+				E58A52831B574B3800E5413D /* DHRoundedSelector.m */,
+			);
+			path = DHRoundedSelector;
+			sourceTree = "<group>";
+		};
+		E58A52841B574B3800E5413D /* DHScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				E58A52851B574B3800E5413D /* DHScanScrollView */,
+			);
+			path = DHScrollView;
+			sourceTree = "<group>";
+		};
+		E58A52851B574B3800E5413D /* DHScanScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				E58A52861B574B3800E5413D /* DHScanScrollView.h */,
+				E58A52871B574B3800E5413D /* DHScanScrollView.m */,
+			);
+			path = DHScanScrollView;
+			sourceTree = "<group>";
+		};
+		E58A52881B574B3800E5413D /* DHStatisticsView */ = {
+			isa = PBXGroup;
+			children = (
+				E58A52891B574B3800E5413D /* DHFunctionChartView.h */,
+				E58A528A1B574B3800E5413D /* DHFunctionChartView.m */,
+				E58A528B1B574B3800E5413D /* DHGradientStatisticsView.h */,
+				E58A528C1B574B3800E5413D /* DHGradientStatisticsView.m */,
+				E58A528D1B574B3800E5413D /* DHSegmentedStatisticsView.h */,
+				E58A528E1B574B3800E5413D /* DHSegmentedStatisticsView.m */,
+			);
+			path = DHStatisticsView;
+			sourceTree = "<group>";
+		};
+		E58A528F1B574B3800E5413D /* DHTextField */ = {
+			isa = PBXGroup;
+			children = (
+				E58A52901B574B3800E5413D /* DHChatTextField.h */,
+				E58A52911B574B3800E5413D /* DHChatTextField.m */,
+				E58A52921B574B3800E5413D /* DHPickerTextField.h */,
+				E58A52931B574B3800E5413D /* DHPickerTextField.m */,
+			);
+			path = DHTextField;
+			sourceTree = "<group>";
+		};
+		E58A52941B574B3800E5413D /* DHViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E58A52951B574B3800E5413D /* DHDrawerViewController.h */,
+				E58A52961B574B3800E5413D /* DHDrawerViewController.m */,
+			);
+			path = DHViewController;
+			sourceTree = "<group>";
+		};
+		E58A52BC1B57506A00E5413D /* 资源 */ = {
+			isa = PBXGroup;
+			children = (
+				E58A52BD1B57506A00E5413D /* Images */,
+				E58A53541B57506A00E5413D /* 声音 */,
+			);
+			path = "资源";
+			sourceTree = "<group>";
+		};
+		E58A52BD1B57506A00E5413D /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				E58A52BE1B57506A00E5413D /* Tabbar */,
+				E58A52C91B57506A00E5413D /* 个人中心 */,
+				E58A52D71B57506A00E5413D /* 就诊 */,
+				E58A52DA1B57506A00E5413D /* 登录注册 */,
+				E58A52E71B57506A00E5413D /* 知识 */,
+				E58A52F31B57506A00E5413D /* 药物 */,
+				E58A52FD1B57506A00E5413D /* 评估 */,
+				E58A53141B57506A00E5413D /* 首页 */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		E58A52BE1B57506A00E5413D /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				E58A52BF1B57506A00E5413D /* 1000-0.png */,
+				E58A52C01B57506A00E5413D /* 1000-1.png */,
+				E58A52C11B57506A00E5413D /* 1001-0.png */,
+				E58A52C21B57506A00E5413D /* 1001-1.png */,
+				E58A52C31B57506A00E5413D /* 1002-0.png */,
+				E58A52C41B57506A00E5413D /* 1002-1.png */,
+				E58A52C51B57506A00E5413D /* 1003-0.png */,
+				E58A52C61B57506A00E5413D /* 1003-1.png */,
+				E58A52C71B57506A00E5413D /* 1004-0.png */,
+				E58A52C81B57506A00E5413D /* 1004-1.png */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		E58A52C91B57506A00E5413D /* 个人中心 */ = {
+			isa = PBXGroup;
+			children = (
+				E58A52CA1B57506A00E5413D /* 个人信息.png */,
+				E58A52CB1B57506A00E5413D /* 侧栏背景.png */,
+				E58A52CC1B57506A00E5413D /* 修改个人信息-未选中.png */,
+				E58A52CD1B57506A00E5413D /* 修改个人信息-选中.png */,
+				E58A52CE1B57506A00E5413D /* 修改密码.png */,
+				E58A52CF1B57506A00E5413D /* 关于我们.png */,
+				E58A52D01B57506A00E5413D /* 现在就去按钮.png */,
+				E58A52D11B57506A00E5413D /* 现在就去按钮2.png */,
+				E58A52D21B57506A00E5413D /* 确认更换按钮.png */,
+				E58A52D31B57506A00E5413D /* 确认更换按钮2.png */,
+				E58A52D41B57506A00E5413D /* 评价一下.png */,
+				E58A52D51B57506A00E5413D /* 退出登录.png */,
+				E58A52D61B57506A00E5413D /* 首页.png */,
+			);
+			path = "个人中心";
+			sourceTree = "<group>";
+		};
+		E58A52D71B57506A00E5413D /* 就诊 */ = {
+			isa = PBXGroup;
+			children = (
+				E58A52D81B57506A00E5413D /* 展开箭头.png */,
+				E58A52D91B57506A00E5413D /* 条件删除按钮.png */,
+			);
+			path = "就诊";
+			sourceTree = "<group>";
+		};
+		E58A52DA1B57506A00E5413D /* 登录注册 */ = {
+			isa = PBXGroup;
+			children = (
+				E58A52DB1B57506A00E5413D /* activityindicator_bgimg.png */,
+				E58A52DC1B57506A00E5413D /* 帮助.png */,
+				E58A52DD1B57506A00E5413D /* 暂无数据-灰色.png */,
+				E58A52DE1B57506A00E5413D /* 暂无数据.png */,
+				E58A52DF1B57506A00E5413D /* 登录密码.png */,
+				E58A52E01B57506A00E5413D /* 登录按钮点击前.png */,
+				E58A52E11B57506A00E5413D /* 登录按钮点击后.png */,
+				E58A52E21B57506A00E5413D /* 登录橘色背景图.png */,
+				E58A52E31B57506A00E5413D /* 登录用户名.png */,
+				E58A52E41B57506A00E5413D /* 网络加载失败-灰色.png */,
+				E58A52E51B57506A00E5413D /* 网络加载失败.png */,
+				E58A52E61B57506A00E5413D /* 返回.png */,
+			);
+			path = "登录注册";
+			sourceTree = "<group>";
+		};
+		E58A52E71B57506A00E5413D /* 知识 */ = {
+			isa = PBXGroup;
+			children = (
+				E58A52E81B57506A00E5413D /* 删除.png */,
+				E58A52E91B57506A00E5413D /* 哮喘收藏_导航.png */,
+				E58A52EA1B57506A00E5413D /* 哮喘知识单元格背景.png */,
+				E58A52EB1B57506A00E5413D /* 哮喘知识默认配图.png */,
+				E58A52EC1B57506A00E5413D /* 心-实底.png */,
+				E58A52ED1B57506A00E5413D /* 收藏列表按钮.png */,
+				E58A52EE1B57506A00E5413D /* 收藏按钮正常.png */,
+				E58A52EF1B57506A00E5413D /* 收藏按钮点击.png */,
+				E58A52F01B57506A00E5413D /* 收藏按钮选中.png */,
+				E58A52F11B57506A00E5413D /* 收藏按钮选中后点击.png */,
+				E58A52F21B57506A00E5413D /* 知识详情默认图.png */,
+			);
+			path = "知识";
+			sourceTree = "<group>";
+		};
+		E58A52F31B57506A00E5413D /* 药物 */ = {
+			isa = PBXGroup;
+			children = (
+				E58A52F41B57506A00E5413D /* line.png */,
+				E58A52F51B57506A00E5413D /* pick_bg.png */,
+				E58A52F61B57506A00E5413D /* 删除按钮.png */,
+				E58A52F71B57506A00E5413D /* 导航删除按钮.png */,
+				E58A52F81B57506A00E5413D /* 扫描按钮.png */,
+				E58A52F91B57506A00E5413D /* 搜索框.png */,
+				E58A52FA1B57506A00E5413D /* 放大镜.png */,
+				E58A52FB1B57506A00E5413D /* 无序原点.png */,
+				E58A52FC1B57506A00E5413D /* 添加按钮.png */,
+			);
+			path = "药物";
+			sourceTree = "<group>";
+		};
+		E58A52FD1B57506A00E5413D /* 评估 */ = {
+			isa = PBXGroup;
+			children = (
+				E58A52FE1B57506A00E5413D /* 个人中心按钮_橙色.png */,
+				E58A52FF1B57506A00E5413D /* 完成按钮1.png */,
+				E58A53001B57506A00E5413D /* 完成按钮2.png */,
+				E58A53011B57506A00E5413D /* 对号按钮.png */,
+				E58A53021B57506A00E5413D /* 开始评估按钮1.png */,
+				E58A53031B57506A00E5413D /* 开始评估按钮2.png */,
+				E58A53041B57506A00E5413D /* 弧线.png */,
+				E58A53051B57506A00E5413D /* 查看评估结果完成按钮1.png */,
+				E58A53061B57506A00E5413D /* 查看评估结果完成按钮2.png */,
+				E58A53071B57506A00E5413D /* 评估1.png */,
+				E58A53081B57506A00E5413D /* 评估2.png */,
+				E58A53091B57506A00E5413D /* 评估3.png */,
+				E58A530A1B57506A00E5413D /* 评估4.png */,
+				E58A530B1B57506A00E5413D /* 评估5.png */,
+				E58A530C1B57506A00E5413D /* 评估结果_完全控制背景.png */,
+				E58A530D1B57506A00E5413D /* 评估结果_未得到控制背景.png */,
+				E58A530E1B57506A00E5413D /* 评估结果_部分控制背景.png */,
+				E58A530F1B57506A00E5413D /* 评估结果页_完全控制.png */,
+				E58A53101B57506A00E5413D /* 评估结果页_未得到控制.png */,
+				E58A53111B57506A00E5413D /* 评估结果页_部分控制.png */,
+				E58A53121B57506A00E5413D /* 进度渐变背景.png */,
+				E58A53131B57506A00E5413D /* 间歇状态.png */,
+			);
+			path = "评估";
+			sourceTree = "<group>";
+		};
+		E58A53141B57506A00E5413D /* 首页 */ = {
+			isa = PBXGroup;
+			children = (
+				E58A53151B57506A00E5413D /* defeat.png */,
+				E58A53161B57506A00E5413D /* defeat_03.png */,
+				E58A53171B57506A00E5413D /* defeat_4s.png */,
+				E58A53181B57506A00E5413D /* 个人中心按钮.png */,
+				E58A53191B57506A00E5413D /* 其他-评估.png */,
+				E58A531A1B57506A00E5413D /* 其他评估.png */,
+				E58A531B1B57506A00E5413D /* 其他评估点击.png */,
+				E58A531C1B57506A00E5413D /* 历史记录按钮.png */,
+				E58A531D1B57506A00E5413D /* 历史记录按钮_橘色.png */,
+				E58A531E1B57506A00E5413D /* 四周-未选中.png */,
+				E58A531F1B57506A00E5413D /* 四周-选中.png */,
+				E58A53201B57506A00E5413D /* 图表.png */,
+				E58A53211B57506A00E5413D /* 完全控制人形.png */,
+				E58A53221B57506A00E5413D /* 完全控制点.png */,
+				E58A53231B57506A00E5413D /* 就诊-提醒.png */,
+				E58A53241B57506A00E5413D /* 当前-用药.png */,
+				E58A53251B57506A00E5413D /* 当前控制状态.png */,
+				E58A53261B57506A00E5413D /* 录入 */,
+				E58A53331B57506A00E5413D /* 我有哮喘按钮.png */,
+				E58A53341B57506A00E5413D /* 我有哮喘按钮2.png */,
+				E58A53351B57506A00E5413D /* 未控制人形.png */,
+				E58A53361B57506A00E5413D /* 未控制点.png */,
+				E58A53371B57506A00E5413D /* 背景图遮罩.png */,
+				E58A53381B57506A00E5413D /* 记录 */,
+				E58A53481B57506A00E5413D /* 评估状态.png */,
+				E58A53491B57506A00E5413D /* 返回_图表.png */,
+				E58A534A1B57506A00E5413D /* 部分控制人形.png */,
+				E58A534B1B57506A00E5413D /* 部分控制点.png */,
+				E58A534C1B57506A00E5413D /* 首页人形.png */,
+				E58A534D1B57506A00E5413D /* 首页人形4s.png */,
+				E58A534E1B57506A00E5413D /* 首页完全控制文字.png */,
+				E58A534F1B57506A00E5413D /* 首页完全控制文字4s.png */,
+				E58A53501B57506A00E5413D /* 首页未控制文字.png */,
+				E58A53511B57506A00E5413D /* 首页未控制文字4s.png */,
+				E58A53521B57506A00E5413D /* 首页部分控制文字.png */,
+				E58A53531B57506A00E5413D /* 首页部分控制文字4s.png */,
+			);
+			path = "首页";
+			sourceTree = "<group>";
+		};
+		E58A53261B57506A00E5413D /* 录入 */ = {
+			isa = PBXGroup;
+			children = (
+				E58A53271B57506A00E5413D /* 1比4.png */,
+				E58A53281B57506A00E5413D /* 2比4.png */,
+				E58A53291B57506A00E5413D /* 3比4.png */,
+				E58A532A1B57506A00E5413D /* 4比4.png */,
+				E58A532B1B57506A00E5413D /* 保存.png */,
+				E58A532C1B57506A00E5413D /* 保存2.png */,
+				E58A532D1B57506A00E5413D /* 否.png */,
+				E58A532E1B57506A00E5413D /* 否2.png */,
+				E58A532F1B57506A00E5413D /* 扳手.png */,
+				E58A53301B57506A00E5413D /* 是.png */,
+				E58A53311B57506A00E5413D /* 是2.png */,
+				E58A53321B57506A00E5413D /* 返回按钮.png */,
+			);
+			path = "录入";
+			sourceTree = "<group>";
+		};
+		E58A53381B57506A00E5413D /* 记录 */ = {
+			isa = PBXGroup;
+			children = (
+				E58A53391B57506A00E5413D /* 1.png */,
+				E58A533A1B57506A00E5413D /* 2.png */,
+				E58A533B1B57506A00E5413D /* 3.png */,
+				E58A533C1B57506A00E5413D /* 4.png */,
+				E58A533D1B57506A00E5413D /* 向右箭头.png */,
+				E58A533E1B57506A00E5413D /* 否_未选中.png */,
+				E58A533F1B57506A00E5413D /* 否_选中.png */,
+				E58A53401B57506A00E5413D /* 搜索框2.png */,
+				E58A53411B57506A00E5413D /* 时间编辑按钮.png */,
+				E58A53421B57506A00E5413D /* 是_未选中.png */,
+				E58A53431B57506A00E5413D /* 是_选中.png */,
+				E58A53441B57506A00E5413D /* 横屏图表.png */,
+				E58A53451B57506A00E5413D /* 记录-删除.png */,
+				E58A53461B57506A00E5413D /* 记录-编辑.png */,
+				E58A53471B57506A00E5413D /* 进度圆环.png */,
+			);
+			path = "记录";
+			sourceTree = "<group>";
+		};
+		E58A53541B57506A00E5413D /* 声音 */ = {
+			isa = PBXGroup;
+			children = (
+				E58A53551B57506A00E5413D /* sound.mp3 */,
+			);
+			path = "声音";
+			sourceTree = "<group>";
+		};
+		E58A53EF1B5756BF00E5413D /* 抽屉 */ = {
+			isa = PBXGroup;
+			children = (
+				E58A53F01B5756D500E5413D /* LeftViewController.h */,
+				E58A53F11B5756D500E5413D /* LeftViewController.m */,
+			);
+			path = "抽屉";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,9 +1239,150 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E556A7D21B55F89A007CFCF5 /* Main.storyboard in Resources */,
+				E58A53D01B57506A00E5413D /* 是_未选中.png in Resources */,
+				E58A53871B57506A00E5413D /* pick_bg.png in Resources */,
+				E58A53981B57506A00E5413D /* 评估1.png in Resources */,
+				E58A537C1B57506A00E5413D /* 哮喘收藏_导航.png in Resources */,
+				E58A53BB1B57506A00E5413D /* 保存2.png in Resources */,
+				E58A53811B57506A00E5413D /* 收藏按钮正常.png in Resources */,
+				E58A53701B57506A00E5413D /* 帮助.png in Resources */,
+				E58A53881B57506A00E5413D /* 删除按钮.png in Resources */,
+				E58A53B31B57506A00E5413D /* 就诊-提醒.png in Resources */,
+				E58A53B21B57506A00E5413D /* 完全控制点.png in Resources */,
+				E58A53A51B57506A00E5413D /* defeat.png in Resources */,
+				E58A53C51B57506A00E5413D /* 未控制点.png in Resources */,
+				E58A53931B57506A00E5413D /* 开始评估按钮1.png in Resources */,
+				E58A539D1B57506A00E5413D /* 评估结果_完全控制背景.png in Resources */,
+				E58A53801B57506A00E5413D /* 收藏列表按钮.png in Resources */,
+				E58A53E01B57506A00E5413D /* 首页部分控制文字.png in Resources */,
+				E58A536C1B57506A00E5413D /* 首页.png in Resources */,
+				E58A539A1B57506A00E5413D /* 评估3.png in Resources */,
+				E58A53731B57506A00E5413D /* 登录密码.png in Resources */,
+				E58A53C11B57506A00E5413D /* 返回按钮.png in Resources */,
+				E58A53C71B57506A00E5413D /* 1.png in Resources */,
+				E58A53CF1B57506A00E5413D /* 时间编辑按钮.png in Resources */,
+				E58A53DF1B57506A00E5413D /* 首页未控制文字4s.png in Resources */,
+				E58A53AC1B57506A00E5413D /* 历史记录按钮.png in Resources */,
+				E58A537D1B57506A00E5413D /* 哮喘知识单元格背景.png in Resources */,
+				E58A53781B57506A00E5413D /* 网络加载失败-灰色.png in Resources */,
+				E58A53661B57506A00E5413D /* 现在就去按钮.png in Resources */,
+				E58A539F1B57506A00E5413D /* 评估结果_部分控制背景.png in Resources */,
+				E58A53741B57506A00E5413D /* 登录按钮点击前.png in Resources */,
+				E58A53CE1B57506A00E5413D /* 搜索框2.png in Resources */,
+				E58A53B81B57506A00E5413D /* 3比4.png in Resources */,
+				E58A53BE1B57506A00E5413D /* 扳手.png in Resources */,
+				E58A536A1B57506A00E5413D /* 评价一下.png in Resources */,
+				E58A53711B57506A00E5413D /* 暂无数据-灰色.png in Resources */,
+				E58A53AE1B57506A00E5413D /* 四周-未选中.png in Resources */,
+				E58A53791B57506A00E5413D /* 网络加载失败.png in Resources */,
+				E58A538B1B57506A00E5413D /* 搜索框.png in Resources */,
+				E58A53961B57506A00E5413D /* 查看评估结果完成按钮1.png in Resources */,
+				E58A53581B57506A00E5413D /* 1001-0.png in Resources */,
+				E58A536F1B57506A00E5413D /* activityindicator_bgimg.png in Resources */,
+				E58A538F1B57506A00E5413D /* 个人中心按钮_橙色.png in Resources */,
+				E58A53A41B57506A00E5413D /* 间歇状态.png in Resources */,
+				E58A53951B57506A00E5413D /* 弧线.png in Resources */,
+				E58A536D1B57506A00E5413D /* 展开箭头.png in Resources */,
+				E58A52B81B574B3800E5413D /* DHViewController.zip in Resources */,
+				E58A53DB1B57506A00E5413D /* 首页人形4s.png in Resources */,
+				E58A53591B57506A00E5413D /* 1001-1.png in Resources */,
+				E58A53B51B57506A00E5413D /* 当前控制状态.png in Resources */,
+				E58A535F1B57506A00E5413D /* 1004-1.png in Resources */,
+				E58A53AB1B57506A00E5413D /* 其他评估点击.png in Resources */,
+				E58A53CB1B57506A00E5413D /* 向右箭头.png in Resources */,
+				E58A535E1B57506A00E5413D /* 1004-0.png in Resources */,
+				E58A53911B57506A00E5413D /* 完成按钮2.png in Resources */,
 				E556A7D71B55F89A007CFCF5 /* LaunchScreen.xib in Resources */,
+				E58A53AA1B57506A00E5413D /* 其他评估.png in Resources */,
+				E58A53891B57506A00E5413D /* 导航删除按钮.png in Resources */,
 				E556A7D41B55F89A007CFCF5 /* Images.xcassets in Resources */,
+				E58A53B01B57506A00E5413D /* 图表.png in Resources */,
+				E58A53A21B57506A00E5413D /* 评估结果页_部分控制.png in Resources */,
+				E58A53671B57506A00E5413D /* 现在就去按钮2.png in Resources */,
+				E58A538C1B57506A00E5413D /* 放大镜.png in Resources */,
+				E58A53C91B57506A00E5413D /* 3.png in Resources */,
+				E58A53C21B57506A00E5413D /* 我有哮喘按钮.png in Resources */,
+				E58A53851B57506A00E5413D /* 知识详情默认图.png in Resources */,
+				E58A53E21B57506A00E5413D /* sound.mp3 in Resources */,
+				E58A53AF1B57506A00E5413D /* 四周-选中.png in Resources */,
+				E58A53691B57506A00E5413D /* 确认更换按钮2.png in Resources */,
+				E58A53D11B57506A00E5413D /* 是_选中.png in Resources */,
+				E58A538A1B57506A00E5413D /* 扫描按钮.png in Resources */,
+				E58A53DE1B57506A00E5413D /* 首页未控制文字.png in Resources */,
+				E58A535A1B57506A00E5413D /* 1002-0.png in Resources */,
+				E58A53A71B57506A00E5413D /* defeat_4s.png in Resources */,
+				E58A539C1B57506A00E5413D /* 评估5.png in Resources */,
+				E58A53921B57506A00E5413D /* 对号按钮.png in Resources */,
+				E58A53BC1B57506A00E5413D /* 否.png in Resources */,
+				E58A53B11B57506A00E5413D /* 完全控制人形.png in Resources */,
+				E58A53BD1B57506A00E5413D /* 否2.png in Resources */,
+				E58A53681B57506A00E5413D /* 确认更换按钮.png in Resources */,
+				E58A53D71B57506A00E5413D /* 返回_图表.png in Resources */,
+				E58A53D51B57506A00E5413D /* 进度圆环.png in Resources */,
+				E58A53A81B57506A00E5413D /* 个人中心按钮.png in Resources */,
+				E58A53A91B57506A00E5413D /* 其他-评估.png in Resources */,
+				E58A537F1B57506A00E5413D /* 心-实底.png in Resources */,
+				E58A53571B57506A00E5413D /* 1000-1.png in Resources */,
+				E58A53771B57506A00E5413D /* 登录用户名.png in Resources */,
+				E58A53821B57506A00E5413D /* 收藏按钮点击.png in Resources */,
+				E58A53CC1B57506A00E5413D /* 否_未选中.png in Resources */,
+				E58A53DA1B57506A00E5413D /* 首页人形.png in Resources */,
+				E58A536B1B57506A00E5413D /* 退出登录.png in Resources */,
+				E58A53C01B57506A00E5413D /* 是2.png in Resources */,
+				E58A537E1B57506A00E5413D /* 哮喘知识默认配图.png in Resources */,
+				E58A53971B57506A00E5413D /* 查看评估结果完成按钮2.png in Resources */,
+				E58A53BF1B57506A00E5413D /* 是.png in Resources */,
+				E58A53D41B57506A00E5413D /* 记录-编辑.png in Resources */,
+				E58A53D91B57506A00E5413D /* 部分控制点.png in Resources */,
+				E58A539E1B57506A00E5413D /* 评估结果_未得到控制背景.png in Resources */,
+				E58A53C41B57506A00E5413D /* 未控制人形.png in Resources */,
+				E58A53621B57506A00E5413D /* 修改个人信息-未选中.png in Resources */,
+				E58A53C61B57506A00E5413D /* 背景图遮罩.png in Resources */,
+				E58A53B71B57506A00E5413D /* 2比4.png in Resources */,
+				E58A53D21B57506A00E5413D /* 横屏图表.png in Resources */,
+				E58A53941B57506A00E5413D /* 开始评估按钮2.png in Resources */,
+				E58A53CD1B57506A00E5413D /* 否_选中.png in Resources */,
+				E58A53611B57506A00E5413D /* 侧栏背景.png in Resources */,
+				E58A538E1B57506A00E5413D /* 添加按钮.png in Resources */,
+				E58A53561B57506A00E5413D /* 1000-0.png in Resources */,
+				E58A53901B57506A00E5413D /* 完成按钮1.png in Resources */,
+				E58A53B91B57506A00E5413D /* 4比4.png in Resources */,
+				E58A53631B57506A00E5413D /* 修改个人信息-选中.png in Resources */,
+				E58A53BA1B57506A00E5413D /* 保存.png in Resources */,
+				E58A53B61B57506A00E5413D /* 1比4.png in Resources */,
+				E58A53A31B57506A00E5413D /* 进度渐变背景.png in Resources */,
+				E58A53A61B57506A00E5413D /* defeat_03.png in Resources */,
+				E58A535C1B57506A00E5413D /* 1003-0.png in Resources */,
+				E58A53DD1B57506A00E5413D /* 首页完全控制文字4s.png in Resources */,
+				E58A53D61B57506A00E5413D /* 评估状态.png in Resources */,
+				E58A53D31B57506A00E5413D /* 记录-删除.png in Resources */,
+				E58A537B1B57506A00E5413D /* 删除.png in Resources */,
+				E58A539B1B57506A00E5413D /* 评估4.png in Resources */,
+				E58A53AD1B57506A00E5413D /* 历史记录按钮_橘色.png in Resources */,
+				E58A538D1B57506A00E5413D /* 无序原点.png in Resources */,
+				E58A53651B57506A00E5413D /* 关于我们.png in Resources */,
+				E58A535D1B57506A00E5413D /* 1003-1.png in Resources */,
+				E58A53841B57506A00E5413D /* 收藏按钮选中后点击.png in Resources */,
+				E58A53D81B57506A00E5413D /* 部分控制人形.png in Resources */,
+				E58A53721B57506A00E5413D /* 暂无数据.png in Resources */,
+				E58A53861B57506A00E5413D /* line.png in Resources */,
+				E58A535B1B57506A00E5413D /* 1002-1.png in Resources */,
+				E58A53601B57506A00E5413D /* 个人信息.png in Resources */,
+				E58A53C31B57506A00E5413D /* 我有哮喘按钮2.png in Resources */,
+				E58A53CA1B57506A00E5413D /* 4.png in Resources */,
+				E58A537A1B57506A00E5413D /* 返回.png in Resources */,
+				E58A53DC1B57506A00E5413D /* 首页完全控制文字.png in Resources */,
+				E58A53751B57506A00E5413D /* 登录按钮点击后.png in Resources */,
+				E58A53A11B57506A00E5413D /* 评估结果页_未得到控制.png in Resources */,
+				E58A53C81B57506A00E5413D /* 2.png in Resources */,
+				E58A53761B57506A00E5413D /* 登录橘色背景图.png in Resources */,
+				E58A53641B57506A00E5413D /* 修改密码.png in Resources */,
+				E58A536E1B57506A00E5413D /* 条件删除按钮.png in Resources */,
+				E58A53B41B57506A00E5413D /* 当前-用药.png in Resources */,
+				E58A53E11B57506A00E5413D /* 首页部分控制文字4s.png in Resources */,
+				E58A53A01B57506A00E5413D /* 评估结果页_完全控制.png in Resources */,
+				E58A53991B57506A00E5413D /* 评估2.png in Resources */,
+				E58A53831B57506A00E5413D /* 收藏按钮选中.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,9 +1400,50 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E58A52301B57408C00E5413D /* LoginViewController.m in Sources */,
+				E58A52B51B574B3800E5413D /* DHChatTextField.m in Sources */,
 				E556A7CF1B55F89A007CFCF5 /* ViewController.m in Sources */,
+				E58A529B1B574B3800E5413D /* DHThemeSettings.m in Sources */,
+				E58A52A21B574B3800E5413D /* DHButton.m in Sources */,
+				E58A52361B57472500E5413D /* UserModel.m in Sources */,
+				E58A52A11B574B3800E5413D /* DHVector.m in Sources */,
+				E58A52B71B574B3800E5413D /* DHDrawerViewController.m in Sources */,
+				E58A53EE1B57527400E5413D /* AssessmentViewController.m in Sources */,
+				E58A529E1B574B3800E5413D /* DHPerspectiveNavigationTransition.m in Sources */,
+				E58A52331B5745B300E5413D /* HomePageViewController.m in Sources */,
+				E58A52BB1B574E4500E5413D /* MainTabViewController.m in Sources */,
+				E58A53E51B5751D300E5413D /* AttendanceViewController.m in Sources */,
+				E58A52B11B574B3800E5413D /* DHScanScrollView.m in Sources */,
+				E58A52A61B574B3800E5413D /* DHInfoFillInView.m in Sources */,
+				E58A52B21B574B3800E5413D /* DHFunctionChartView.m in Sources */,
+				E58A529C1B574B3800E5413D /* DHBaseTransition.m in Sources */,
+				E58A52AF1B574B3800E5413D /* DHPulldownTableView.m in Sources */,
+				E58A52AD1B574B3800E5413D /* DHSegmentedGradientProgressView.m in Sources */,
 				E556A7CC1B55F89A007CFCF5 /* AppDelegate.m in Sources */,
 				E556A7C91B55F89A007CFCF5 /* main.m in Sources */,
+				E58A52AA1B574B3800E5413D /* DHGradientStepProgressView.m in Sources */,
+				E58A52A01B574B3800E5413D /* DHSystemAppNavigationTransition.m in Sources */,
+				E58A52991B574B3800E5413D /* DHFoundationTool.m in Sources */,
+				E58A52AC1B574B3800E5413D /* DHProgressAnimation.m in Sources */,
+				E58A52B61B574B3800E5413D /* DHPickerTextField.m in Sources */,
+				E58A52A71B574B3800E5413D /* DHInfoPresentationView.m in Sources */,
+				E58A52A51B574B3800E5413D /* DHCaptchaView.m in Sources */,
+				E58A52B41B574B3800E5413D /* DHSegmentedStatisticsView.m in Sources */,
+				E58A52A81B574B3800E5413D /* CABasicAnimation+AnimationCompletionBlock.m in Sources */,
+				E58A52AB1B574B3800E5413D /* DHNormalProgressView.m in Sources */,
+				E58A53E81B57520C00E5413D /* KnowledgeViewController.m in Sources */,
+				E58A529D1B574B3800E5413D /* DHNavigationBaseTransition.m in Sources */,
+				E58A52A31B574B3800E5413D /* DHImageTextButton.m in Sources */,
+				E58A52B01B574B3800E5413D /* DHRoundedSelector.m in Sources */,
+				E58A52A41B574B3800E5413D /* DHRadioButton.m in Sources */,
+				E58A529F1B574B3800E5413D /* DHPerspectiveTransition.m in Sources */,
+				E58A53EB1B57523D00E5413D /* MedicineViewController.m in Sources */,
+				E58A52B31B574B3800E5413D /* DHGradientStatisticsView.m in Sources */,
+				E58A52A91B574B3800E5413D /* DHGradientRoundedProgressView.m in Sources */,
+				E58A529A1B574B3800E5413D /* DHRequest.m in Sources */,
+				E58A53F21B5756D500E5413D /* LeftViewController.m in Sources */,
+				E58A52981B574B3800E5413D /* DHConvenienceAutoLayout.m in Sources */,
+				E58A52AE1B574B3800E5413D /* DHSegmentedProgressView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,14 +1466,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E556A7D01B55F89A007CFCF5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E556A7D11B55F89A007CFCF5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E556A7D51B55F89A007CFCF5 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -412,6 +1626,7 @@
 				E556A7E81B55F89A007CFCF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E556A7E91B55F89A007CFCF5 /* Build configuration list for PBXNativeTarget "DeepBreathingTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +1635,7 @@
 				E556A7EB1B55F89A007CFCF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

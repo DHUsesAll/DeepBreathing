@@ -15,3 +15,14 @@
 
 @end
 
+extern  NSString * const kUserIdKey;
+
+
+
+
+
+
+
+
+
+
