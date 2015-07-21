@@ -7,9 +7,14 @@
 //
 
 #import "UserModel.h"
+#import "NetworkingManager.h"
 
 @implementation UserModel
 
-
++ (UserModel *)defaultUser
+{
+    
+    return nil;
+}
 
 @end

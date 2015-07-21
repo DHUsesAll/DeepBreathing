@@ -15,6 +15,7 @@
 @property (nonatomic, strong) NSString * phoneNumber;
 @property (nonatomic, strong) NSString * sex;
 @property (nonatomic, strong) NSString * photo;
+@property (nonatomic, strong) NSString * token;
 
 
 + (UserModel *)defaultUser;

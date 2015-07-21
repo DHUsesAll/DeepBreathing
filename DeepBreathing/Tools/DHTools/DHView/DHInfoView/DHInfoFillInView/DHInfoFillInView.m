@@ -21,6 +21,7 @@
 #define ITEM_SPACING 10
 #define ITEM_HEIGHT 35
 #define FONT_SIZE   15
+
 //#define THEME_COLOR [DHThemeSettings themeColor]
 
 NSString * const kDHInfoFillInTypeField = @"kDHInfoFillInTypeField";             // 输入框
@@ -170,7 +171,7 @@ NSString * const kDHTextFieldFillInTypeControl = @"kDHTextFieldFillInTypeControl
             pickerTextField.placeholder = placeHolder;
             pickerTextField.backgroundColor = [UIColor whiteColor];
             pickerTextField.layer.cornerRadius = 3;
-            pickerTextField.layer.borderColor = HH_THEME_COLOR.CGColor;
+            pickerTextField.layer.borderColor = THEME_TEXT_COLOR.CGColor;
             pickerTextField.layer.borderWidth = 1;
             pickerTextField.leftView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 10, pickerTextField.frame.size.height)];
             pickerTextField.leftViewMode = UITextFieldViewModeAlways;
@@ -204,7 +205,7 @@ NSString * const kDHTextFieldFillInTypeControl = @"kDHTextFieldFillInTypeControl
             UISegmentedControl * segmentedControl = [[UISegmentedControl alloc] initWithItems:items];
             [segmentedControl addTarget:self action:@selector(change:) forControlEvents:UIControlEventValueChanged];
             [segmentedControl setSelectedSegmentIndex:0];
-            [segmentedControl setTintColor:HH_THEME_COLOR];
+            [segmentedControl setTintColor:THEME_TEXT_COLOR];
             [segmentedControl setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:13 * [DHConvenienceAutoLayout iPhone5VerticalMutiplier]]} forState:UIControlStateNormal];
             [segmentedControl setFrame:[DHConvenienceAutoLayout frameWithLayoutOption:DHAutoLayoutOptionPosition | DHAutoLayoutOptionScale iPhone5Frame:CGRectMake(0 , 0, 130, 25) adjustWidth:YES]];
             [segmentedControl setCenter:CGPointMake(segmentedControl.frame.size.width/2+(titleLabel.frame.size.width), titleLabel.center.y)];

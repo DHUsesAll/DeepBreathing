@@ -24,6 +24,28 @@ NSString * const kUserIdKey = @"kUserIdKey";
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    NSArray * array = @[@"李波",@"吕玉梅",@"蒲嘉欣",@"李玉辉",@"刘英群",@"肖文",@"刘艺前",@"李晓强",@"王振宇",@"唐德刚",@"唐明斌",@"罗野",@"肖攀",@"牛冠",@"陈立",@"陈伟",@"陈超",@"杜毅"];
+    NSInteger index = arc4random()%array.count;
+    
+    NSLog(@"%@",array[index]);
+    
+    
+    
+#if TARGET_IPHONE_SIMULATOR
+    [UserModel defaultUser].token = @"";
+    
+#else
+    if (([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0)) {
+        UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:(UIRemoteNotificationTypeSound                                                                                         |UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeBadge) categories:nil];
+        [[UIApplication sharedApplication] registerUserNotificationSettings:settings];
+    }else {
+        
+        [[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIRemoteNotificationTypeSound | UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeBadge)];
+    }
+#endif
+    
+    [UserModel defaultUser].token = [[NSUserDefaults standardUserDefaults] objectForKey:@"DeviceToken"];
+    
     if ([[NSUserDefaults standardUserDefaults] objectForKey:kUserIdKey]) {
         
         // 各个模块controller的类名
@@ -55,7 +77,6 @@ NSString * const kUserIdKey = @"kUserIdKey";
     
     [self.window makeKeyAndVisible];
     
-#warning 注册推送
     return YES;
 }
 
@@ -73,6 +94,40 @@ NSString * const kUserIdKey = @"kUserIdKey";
     
     return _window;
 }
+
+- (void)application:(UIApplication *)application didRegisterUserNotificationSettings:(UIUserNotificationSettings *)notificationSettings{
+    
+    //register to receive notifications
+    [application registerForRemoteNotifications];
+}
+
+- (void)application:(UIApplication *)application handleActionWithIdentifier:(NSString *)identifier forRemoteNotification:(NSDictionary *)userInfo completionHandler:(void(^)())completionHandler{
+    //handle the actions
+    if ([identifier isEqualToString:@"declineAction"]) {
+        
+    } else if ([identifier isEqualToString:@"answerAction"]) {
+        
+        
+    }
+}
+
+//#endif
+
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
+{
+    
+    //转换成string
+    NSString *dvsToken = [[deviceToken description] stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"<>"]];
+    
+    //============保存dvsToken===========================
+    
+    [UserModel defaultUser].token = [dvsToken stringByReplacingOccurrencesOfString:@" " withString:@""];
+    
+    [[NSUserDefaults standardUserDefaults] setObject:[UserModel defaultUser].token forKey:@"DeviceToken"]; //将dvsToken存入本地
+    
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
+
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {

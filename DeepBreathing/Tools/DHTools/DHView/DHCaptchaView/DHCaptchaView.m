@@ -33,7 +33,7 @@
         self.reEnableTimeInterval = interval;
         self.backgroundColor = [DHFoundationTool colorWith255Red:154 green:154 blue:154 alpha:1];
         reEnableProgressView = [[UIView alloc] initWithFrame:self.bounds];
-        reEnableProgressView.backgroundColor = HH_THEME_COLOR;
+        reEnableProgressView.backgroundColor = THEME_TEXT_COLOR;
 //        reEnableProgressView.layer.cornerRadius = ZPFlexible(5.0);
         if (actionBlock) {
             _actionBlock = actionBlock;

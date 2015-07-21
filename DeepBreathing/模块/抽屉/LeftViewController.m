@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.view.backgroundColor = THEME_TEXT_COLOR;
 }
 
 - (void)didReceiveMemoryWarning {

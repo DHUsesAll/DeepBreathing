@@ -1,0 +1,22 @@
+//
+//  PrefixHeader.pch
+//  DeepBreathing
+//
+//  Created by DreamHack on 15-7-17.
+//  Copyright (c) 2015年 DreamHack. All rights reserved.
+//
+
+#ifndef DeepBreathing_PrefixHeader_pch
+#define DeepBreathing_PrefixHeader_pch
+
+#define IMAGE_WITH_NAME(name) [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForAuxiliaryExecutable:name]]
+
+#define RGB_COLOR(r,g,b) [UIColor colorWithRed:r/255.f green:g/255.f blue:b/255.f alpha:1]
+
+#define THEME_TEXT_COLOR    RGB_COLOR(239, 107, 42)
+
+#import "UserModel.h"
+#import "DHConvenienceAutoLayout.h"
+#import "DHFoundationTool.h"
+
+#endif
