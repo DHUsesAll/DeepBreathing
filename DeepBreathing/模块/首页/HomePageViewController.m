@@ -7,6 +7,8 @@
 //
 
 #import "HomePageViewController.h"
+#import "AppDelegate.h"
+#import "HomePageQuestionManager.h"
 
 
 @interface HomePageViewController ()
@@ -14,9 +16,14 @@
 // 底部的渐变图层
 @property (nonatomic, strong) CAGradientLayer * gradientLayer;
 // 遮罩
-@property (nonatomic, strong) CALayer * maskImageView;
+@property (nonatomic, strong) CAShapeLayer * maskLayer;
 // maskImageView下面的白色的视图
 @property (nonatomic, strong) UIView * bottomView;
+// 路径
+@property (nonatomic, strong) UIBezierPath * bezierPath;
+
+//
+@property (nonatomic, strong) UIView * resultView;
 
 - (void)initializeAppearance;
 
@@ -31,9 +38,14 @@
 
 - (void)initializeAppearance
 {
-    [self.view.layer addSublayer:self.gradientLayer];
-    [self.view.layer addSublayer:self.maskImageView];
-    [self.view addSubview:self.bottomView];
+    UIImageView * imageView = [[UIImageView alloc] initWithImage:IMAGE_WITH_NAME(@"图表.png")];
+    imageView.frame = [DHConvenienceAutoLayout frameWithLayoutOption:DHAutoLayoutOptionPosition|DHAutoLayoutOptionScale iPhone5Frame:CGRectMake(10, 410, 300, 105) adjustWidth:YES];
+    [self.view addSubview:imageView];
+    
+    UIView * containerView = [[HomePageQuestionManager defaultManager] questionContainerView];
+    [self.view addSubview:containerView];
+//    containerView.hidden = YES;
+    [self.view addSubview:self.resultView];
     
     UIButton * fillInButton = [UIButton buttonWithType:UIButtonTypeCustom];
     fillInButton.frame = [DHConvenienceAutoLayout frameWithLayoutOption:DHAutoLayoutOptionPosition|DHAutoLayoutOptionScale iPhone5Frame:CGRectMake(0, 284, 100, 100) adjustWidth:YES];
@@ -43,22 +55,40 @@
     fillInButton.center = CGPointMake(CGRectGetWidth(self.view.bounds)/2, fillInButton.center.y);
     [fillInButton addTarget:self action:@selector(fillIn) forControlEvents:UIControlEventTouchUpInside];
     
-    [self.view addSubview:fillInButton];
+    [self.resultView addSubview:fillInButton];
+    
     
 }
 
 #pragma mark - getter
+- (UIView *)resultView
+{
+    if (!_resultView) {
+        _resultView = ({
+        
+            UIView * view = [[UIView alloc] initWithFrame:[DHConvenienceAutoLayout frameWithLayoutOption:DHAutoLayoutOptionScale|DHAutoLayoutOptionPosition iPhone5Frame:CGRectMake(0, 0, 320, 568) adjustWidth:![DHFoundationTool iPhone4]]];
+            [view.layer addSublayer:self.gradientLayer];
+            self.gradientLayer.mask = self.maskLayer;
+            
+            view;
+        
+        });
+    }
+    return _resultView;
+}
+
+
 - (CAGradientLayer *)gradientLayer
 {
     if (!_gradientLayer) {
         _gradientLayer = ({
         
             CAGradientLayer * gradientLayer = [CAGradientLayer layer];
-            gradientLayer.frame = [DHConvenienceAutoLayout frameWithLayoutOption:DHAutoLayoutOptionScale|DHAutoLayoutOptionPosition iPhone5Frame:CGRectMake(0, 0, 320, 385) adjustWidth:![DHFoundationTool iPhone4]];
-            gradientLayer.colors = @[(__bridge id)[UIColor orangeColor].CGColor,(__bridge id)[UIColor yellowColor].CGColor];
+            gradientLayer.frame = [DHConvenienceAutoLayout frameWithLayoutOption:DHAutoLayoutOptionScale|DHAutoLayoutOptionPosition iPhone5Frame:CGRectMake(0, 0, 320, 568) adjustWidth:![DHFoundationTool iPhone4]];
+            gradientLayer.colors = @[(__bridge id)RGB_COLOR(246, 139, 65).CGColor,(__bridge id)RGB_COLOR(249, 210, 102).CGColor];
             
             gradientLayer.startPoint = CGPointMake(0, 0);
-            gradientLayer.endPoint = CGPointMake(0, 568.f/385.f);
+            gradientLayer.endPoint = CGPointMake(0, 1);
             
             gradientLayer;
         
@@ -68,81 +98,70 @@
     return _gradientLayer;
 }
 
-- (CALayer *)maskImageView
+- (CAShapeLayer *)maskLayer
 {
-    if (!_maskImageView) {
-        _maskImageView = ({
+    
+    if (!_maskLayer) {
         
-            CALayer * layer = [CALayer layer];
+        _maskLayer = ({
             
-            layer.frame = [DHConvenienceAutoLayout frameWithLayoutOption:DHAutoLayoutOptionPosition|DHAutoLayoutOptionScale iPhone5Frame:CGRectMake(0, 315, 320, 70) adjustWidth:![DHFoundationTool iPhone4]];
+            CAShapeLayer * shapeLayer = [CAShapeLayer layer];
             
-            UIImage * image = IMAGE_WITH_NAME(@"背景图遮罩.png");
-            layer.contents = (__bridge id)image.CGImage;
+            shapeLayer.frame = CGRectMake(0, 0, CGRectGetWidth(self.view.bounds), CGRectGetHeight(self.view.bounds)*2);
             
-            layer;
-        
+            shapeLayer.fillColor = [UIColor redColor].CGColor;
+            shapeLayer.backgroundColor = [UIColor clearColor].CGColor;
+            shapeLayer.path = [HomePageQuestionManager pathForStarting];
+            shapeLayer;
         });
     }
     
-    return _maskImageView;
+    return _maskLayer;
 }
 
-- (UIView *)bottomView
+
+- (UIBezierPath *)bezierPath
 {
-    if (!_bottomView) {
-        _bottomView = ({
+    if (!_bezierPath) {
         
-            UIView * view = [[UIView alloc] initWithFrame:CGRectMake(0, 385, 320, 568-385-50)];
-            view.backgroundColor = [UIColor whiteColor];
+        CGFloat width = CGRectGetWidth(self.view.bounds);
+        
+        _bezierPath = ({
             
-            view;
+            
+            UIBezierPath * path = [UIBezierPath bezierPath];
+            
+            [path moveToPoint:CGPointMake(0, 0)];
+            [path addLineToPoint:[DHConvenienceAutoLayout centerWithiPhone5Center:CGPointMake(0, 315)]];
+            [path addQuadCurveToPoint:CGPointMake(width, 315*[DHConvenienceAutoLayout iPhone5VerticalMutiplier]) controlPoint:CGPointMake(width/2, 470*[DHConvenienceAutoLayout iPhone5VerticalMutiplier])];
+            [path addLineToPoint:CGPointMake(width, 0)];
+            
+            path;
+            
         });
+        
     }
     
-    return _bottomView;
+    return _bezierPath;
 }
 
 #pragma mark - button action
 - (void)fillIn
 {
-    CATransition * transition = [CATransition animation];
-    transition.type = @"oglFlip";
-    transition.subtype = kCATransitionFromLeft;
-    transition.duration = 0.8;
-    transition.delegate = self;
-    [self.gradientLayer addAnimation:transition forKey:@"aaa"];
+    UIView * containerView = [[HomePageQuestionManager defaultManager] questionContainerView];
+    containerView.hidden = NO;
+    [UIView animateWithDuration:1.2 animations:^{
+        [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromLeft forView:_resultView cache:NO];
+    } completion:^(BOOL finished) {
+        
+    }];
+    _resultView.hidden = YES;
     
-    self.gradientLayer.frame = [UIScreen mainScreen].bounds;
-}
-
-#pragma mark - 系统的delegate方法
-- (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag
-{
-    
-    
-    CABasicAnimation * maskAnimation = [CABasicAnimation animation];
-    maskAnimation.keyPath = @"transform";
-    maskAnimation.duration = 0.8;
-    maskAnimation.fromValue = [NSValue valueWithCATransform3D:CATransform3DIdentity];
-    _maskImageView.transform = CATransform3DMakeRotation(M_PI, 1, 0, 0);
-//    [_maskImageView addAnimation:maskAnimation forKey:@""];
-    
-    CABasicAnimation * maskTranslationAnimation = [CABasicAnimation animation];
-    maskTranslationAnimation.duration = 0.8;
-    maskTranslationAnimation.keyPath = @"position";
-    maskTranslationAnimation.fromValue = [NSValue valueWithCGPoint:_maskImageView.position];
-    _maskImageView.position = CGPointMake(_maskImageView.position.x, CGRectGetHeight(self.view.bounds)+50+CGRectGetHeight(_maskImageView.bounds)/2);
-//    [_maskImageView addAnimation:maskTranslationAnimation forKey:@""];
-    
-    CAAnimationGroup * group = [CAAnimationGroup animation];
-    group.animations = @[maskAnimation,maskTranslationAnimation];
-    [_maskImageView addAnimation:group forKey:@"aaa"];
-    
-    
-//    [UIView animateWithDuration:0.8 animations:^{
-//        _bottomView.frame = CGRectMake(0, 568*[DHConvenienceAutoLayout iPhone5VerticalMutiplier], 320*[DHConvenienceAutoLayout iPhone5VerticalMutiplier], 0);
-//    }];
+    [UIView animateWithDuration:1.2 animations:^{
+        [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromLeft forView:containerView cache:NO];
+    } completion:^(BOOL finished) {
+        [[HomePageQuestionManager defaultManager] didTransitionToQuestion];
+    }];
 }
 
 @end
