@@ -32,6 +32,7 @@
 		E52A75621B60822500090038 /* KnowledgeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E52A75611B60822500090038 /* KnowledgeModel.m */; };
 		E52A75651B6087B600090038 /* KnowledgeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E52A75641B6087B600090038 /* KnowledgeCell.m */; };
 		E52A75681B60913A00090038 /* KnowledgeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E52A75671B60913A00090038 /* KnowledgeViewModel.m */; };
+		E52A756B1B60980100090038 /* KnowledgeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E52A756A1B60980100090038 /* KnowledgeDetailViewController.m */; };
 		E556A7C91B55F89A007CFCF5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E556A7C81B55F89A007CFCF5 /* main.m */; };
 		E556A7CC1B55F89A007CFCF5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E556A7CB1B55F89A007CFCF5 /* AppDelegate.m */; };
 		E556A7CF1B55F89A007CFCF5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E556A7CE1B55F89A007CFCF5 /* ViewController.m */; };
@@ -303,6 +304,8 @@
 		E52A75641B6087B600090038 /* KnowledgeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KnowledgeCell.m; sourceTree = "<group>"; };
 		E52A75661B60913A00090038 /* KnowledgeViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KnowledgeViewModel.h; sourceTree = "<group>"; };
 		E52A75671B60913A00090038 /* KnowledgeViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KnowledgeViewModel.m; sourceTree = "<group>"; };
+		E52A75691B60980100090038 /* KnowledgeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KnowledgeDetailViewController.h; sourceTree = "<group>"; };
+		E52A756A1B60980100090038 /* KnowledgeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KnowledgeDetailViewController.m; sourceTree = "<group>"; };
 		E556A7C31B55F89A007CFCF5 /* DeepBreathing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeepBreathing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E556A7C71B55F89A007CFCF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E556A7C81B55F89A007CFCF5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -891,6 +894,8 @@
 				E52A75611B60822500090038 /* KnowledgeModel.m */,
 				E52A75661B60913A00090038 /* KnowledgeViewModel.h */,
 				E52A75671B60913A00090038 /* KnowledgeViewModel.m */,
+				E52A75691B60980100090038 /* KnowledgeDetailViewController.h */,
+				E52A756A1B60980100090038 /* KnowledgeDetailViewController.m */,
 			);
 			path = "知识";
 			sourceTree = "<group>";
@@ -1708,6 +1713,7 @@
 				E50905981B5C9551000FB9FE /* DHRoundedSelector.m in Sources */,
 				E58A529E1B574B3800E5413D /* DHPerspectiveNavigationTransition.m in Sources */,
 				E58A52331B5745B300E5413D /* HomePageViewController.m in Sources */,
+				E52A756B1B60980100090038 /* KnowledgeDetailViewController.m in Sources */,
 				E58A545A1B57A44200E5413D /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				E58A52BB1B574E4500E5413D /* MainTabViewController.m in Sources */,
 				E50905481B5C8D34000FB9FE /* HelpViewController.m in Sources */,

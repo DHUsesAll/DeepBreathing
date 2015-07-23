@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>95C247B2-6AB3-48B8-A135-65E7B46D078E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>DeepBreathing</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>19511C7901B366BAAD053A324F4CE8BA245395C9</key>
+		<string>https://github.com/SmileGYang/DeepBreathing.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>DeepBreathing.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>19511C7901B366BAAD053A324F4CE8BA245395C9</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/SmileGYang/DeepBreathing.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>19511C7901B366BAAD053A324F4CE8BA245395C9</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>19511C7901B366BAAD053A324F4CE8BA245395C9</string>
+			<key>IDESourceControlWCCName</key>
+			<string>DeepBreathing</string>
+		</dict>
+	</array>
+</dict>
+</plist>

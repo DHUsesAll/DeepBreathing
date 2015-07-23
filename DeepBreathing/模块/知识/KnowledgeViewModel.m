@@ -42,13 +42,36 @@
 {
     NSMutableDictionary * cellInfo = [NSMutableDictionary dictionaryWithCapacity:0];
     
-    NSDictionary * cellInfoDic = self.knowledgeData[@"data"][@"result"][indexPath.section];
+    NSDictionary * cellInfoDic = [self cellInfoDicAtIndexPath:indexPath];
     
     cellInfo[kKnowledgeCellInfoDateKey] = cellInfoDic[@"createTime"];
     cellInfo[kKnowledgeCellInfoTitleKey] = cellInfoDic[@"title"];
     cellInfo[kKnowledgeCellInfoImageKey] = [BASE_URL stringByAppendingString:cellInfoDic[@"pic"]];
     
     return cellInfo;
+}
+
+- (NSString *)titleAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSDictionary * infoDic = [self cellInfoDicAtIndexPath:indexPath];
+    
+    return infoDic[@"title"];
+}
+
+- (NSString *)contentsAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSDictionary * infoDic = [self cellInfoDicAtIndexPath:indexPath];
+    
+    return infoDic[@"content"];
+}
+
+
+#pragma mark - 私有方法
+- (NSDictionary *)cellInfoDicAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSDictionary * cellInfoDic = self.knowledgeData[@"data"][@"result"][indexPath.section];
+    
+    return cellInfoDic;
 }
 
 @end

@@ -13,6 +13,8 @@
 #import "UIKit+AFNetworking.h"
 #import "KnowledgeViewModel.h"
 
+
+#import "KnowledgeDetailViewController.h"
 @interface KnowledgeViewController ()<UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong) UITableView * tableView;
@@ -143,6 +145,11 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    KnowledgeDetailViewController * detailVC = [[KnowledgeDetailViewController alloc] initWithTitle:[self.viewModel titleAtIndexPath:indexPath]];
+    detailVC.webContent = [self.viewModel contentsAtIndexPath:indexPath];
+    
+    [self.parentViewController.navigationController pushViewController:detailVC animated:YES];
 }
 
 @end
