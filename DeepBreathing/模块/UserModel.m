@@ -13,8 +13,12 @@
 
 + (UserModel *)defaultUser
 {
-    
-    return nil;
+    static UserModel * userModel;
+    static dispatch_once_t once;
+    dispatch_once(&once, ^{
+        userModel = [[UserModel alloc] init];
+    });
+    return userModel;
 }
 
 @end

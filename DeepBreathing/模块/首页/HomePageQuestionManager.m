@@ -10,6 +10,7 @@
 // 管理4个问题的显示
 
 #import "HomePageQuestionManager.h"
+#import "QuestionBaseView.h"
 
 #define QUESTION_WIDTH  (320*[DHConvenienceAutoLayout iPhone5VerticalMutiplier])
 
@@ -19,10 +20,10 @@
 
 @property (nonatomic, strong) UIView * questionContainerView;
 
-@property (nonatomic, strong) UIView * question1View;
-@property (nonatomic, strong) UIView * question2View;
-@property (nonatomic, strong) UIView * question3View;
-@property (nonatomic, strong) UIView * question4View;
+@property (nonatomic, strong) QuestionBaseView * question1View;
+@property (nonatomic, strong) QuestionBaseView * question2View;
+@property (nonatomic, strong) QuestionBaseView * question3View;
+@property (nonatomic, strong) QuestionBaseView * question4View;
 
 @property (nonatomic, assign) NSInteger currentQuestionIndex;
 
@@ -36,15 +37,15 @@
 {
     //Singleton instance
     
-    static HomePageQuestionManager *HPQMnager = nil;
+    static HomePageQuestionManager *HPQManager = nil;
     
     //Dispatching it once.
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        HPQMnager = [[self alloc] init];
+        HPQManager = [[self alloc] init];
     });
     
-    return HPQMnager;
+    return HPQManager;
 }
 
 + (CGPathRef)pathForStarting
@@ -95,11 +96,11 @@
     return _questionContainerView;
 }
 
-- (UIView *)question1View
+- (QuestionBaseView *)question1View
 {
     if (!_question1View) {
         _question1View = ({
-            UIView * view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, QUESTION_WIDTH, QUESTION_HEIGTH)];
+            QuestionBaseView * view = [[QuestionBaseView alloc] initWithFrame:CGRectMake(0, 0, QUESTION_WIDTH, QUESTION_HEIGTH)];
             
             CAGradientLayer * gradientLayer = [CAGradientLayer layer];
             gradientLayer.frame = [DHConvenienceAutoLayout frameWithLayoutOption:DHAutoLayoutOptionScale|DHAutoLayoutOptionPosition iPhone5Frame:CGRectMake(0, 0, 320, 568) adjustWidth:![DHFoundationTool iPhone4]];

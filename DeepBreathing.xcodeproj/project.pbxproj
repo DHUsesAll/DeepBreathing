@@ -28,6 +28,10 @@
 		E509059D1B5C9551000FB9FE /* DHChatTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E50905871B5C9551000FB9FE /* DHChatTextField.m */; };
 		E509059E1B5C9551000FB9FE /* DHPickerTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E50905891B5C9551000FB9FE /* DHPickerTextField.m */; };
 		E50905A11B5C9D3C000FB9FE /* ForgetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E50905A01B5C9D3C000FB9FE /* ForgetViewController.m */; };
+		E52A755F1B6078DE00090038 /* NetworkingManager+Knowledge.m in Sources */ = {isa = PBXBuildFile; fileRef = E52A755E1B6078DE00090038 /* NetworkingManager+Knowledge.m */; };
+		E52A75621B60822500090038 /* KnowledgeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E52A75611B60822500090038 /* KnowledgeModel.m */; };
+		E52A75651B6087B600090038 /* KnowledgeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E52A75641B6087B600090038 /* KnowledgeCell.m */; };
+		E52A75681B60913A00090038 /* KnowledgeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E52A75671B60913A00090038 /* KnowledgeViewModel.m */; };
 		E556A7C91B55F89A007CFCF5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E556A7C81B55F89A007CFCF5 /* main.m */; };
 		E556A7CC1B55F89A007CFCF5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E556A7CB1B55F89A007CFCF5 /* AppDelegate.m */; };
 		E556A7CF1B55F89A007CFCF5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E556A7CE1B55F89A007CFCF5 /* ViewController.m */; };
@@ -235,6 +239,7 @@
 		E5D5FA061B5F619400D73C0B /* 急性发作.png in Resources */ = {isa = PBXBuildFile; fileRef = E5D5F9F61B5F619400D73C0B /* 急性发作.png */; };
 		E5D5FA071B5F619400D73C0B /* 错.png in Resources */ = {isa = PBXBuildFile; fileRef = E5D5F9F71B5F619400D73C0B /* 错.png */; };
 		E5D5FA081B5F619400D73C0B /* 错_选中.png in Resources */ = {isa = PBXBuildFile; fileRef = E5D5F9F81B5F619400D73C0B /* 错_选中.png */; };
+		E5D5FA0B1B5F6D5500D73C0B /* QuestionBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D5FA0A1B5F6D5500D73C0B /* QuestionBaseView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -290,6 +295,14 @@
 		E50905891B5C9551000FB9FE /* DHPickerTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHPickerTextField.m; sourceTree = "<group>"; };
 		E509059F1B5C9D3C000FB9FE /* ForgetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgetViewController.h; sourceTree = "<group>"; };
 		E50905A01B5C9D3C000FB9FE /* ForgetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgetViewController.m; sourceTree = "<group>"; };
+		E52A755D1B6078DE00090038 /* NetworkingManager+Knowledge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NetworkingManager+Knowledge.h"; sourceTree = "<group>"; };
+		E52A755E1B6078DE00090038 /* NetworkingManager+Knowledge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NetworkingManager+Knowledge.m"; sourceTree = "<group>"; };
+		E52A75601B60822500090038 /* KnowledgeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KnowledgeModel.h; sourceTree = "<group>"; };
+		E52A75611B60822500090038 /* KnowledgeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KnowledgeModel.m; sourceTree = "<group>"; };
+		E52A75631B6087B600090038 /* KnowledgeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KnowledgeCell.h; sourceTree = "<group>"; };
+		E52A75641B6087B600090038 /* KnowledgeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KnowledgeCell.m; sourceTree = "<group>"; };
+		E52A75661B60913A00090038 /* KnowledgeViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KnowledgeViewModel.h; sourceTree = "<group>"; };
+		E52A75671B60913A00090038 /* KnowledgeViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KnowledgeViewModel.m; sourceTree = "<group>"; };
 		E556A7C31B55F89A007CFCF5 /* DeepBreathing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeepBreathing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E556A7C71B55F89A007CFCF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E556A7C81B55F89A007CFCF5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -552,6 +565,8 @@
 		E5D5F9F61B5F619400D73C0B /* 急性发作.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "急性发作.png"; sourceTree = "<group>"; };
 		E5D5F9F71B5F619400D73C0B /* 错.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "错.png"; sourceTree = "<group>"; };
 		E5D5F9F81B5F619400D73C0B /* 错_选中.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "错_选中.png"; sourceTree = "<group>"; };
+		E5D5FA091B5F6D5500D73C0B /* QuestionBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionBaseView.h; sourceTree = "<group>"; };
+		E5D5FA0A1B5F6D5500D73C0B /* QuestionBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionBaseView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -870,6 +885,12 @@
 			children = (
 				E58A53E61B57520C00E5413D /* KnowledgeViewController.h */,
 				E58A53E71B57520C00E5413D /* KnowledgeViewController.m */,
+				E52A75631B6087B600090038 /* KnowledgeCell.h */,
+				E52A75641B6087B600090038 /* KnowledgeCell.m */,
+				E52A75601B60822500090038 /* KnowledgeModel.h */,
+				E52A75611B60822500090038 /* KnowledgeModel.m */,
+				E52A75661B60913A00090038 /* KnowledgeViewModel.h */,
+				E52A75671B60913A00090038 /* KnowledgeViewModel.m */,
 			);
 			path = "知识";
 			sourceTree = "<group>";
@@ -899,6 +920,8 @@
 				E58A52321B5745B300E5413D /* HomePageViewController.m */,
 				E5D5F9E11B5F3EB200D73C0B /* HomePageQuestionManager.h */,
 				E5D5F9E21B5F3EB200D73C0B /* HomePageQuestionManager.m */,
+				E5D5FA091B5F6D5500D73C0B /* QuestionBaseView.h */,
+				E5D5FA0A1B5F6D5500D73C0B /* QuestionBaseView.m */,
 			);
 			path = "首页";
 			sourceTree = "<group>";
@@ -1335,6 +1358,8 @@
 				E58A546A1B58971600E5413D /* NetworkingManager.m */,
 				E58A546C1B5897A400E5413D /* NetworkingManager+Login.h */,
 				E58A546D1B5897A400E5413D /* NetworkingManager+Login.m */,
+				E52A755D1B6078DE00090038 /* NetworkingManager+Knowledge.h */,
+				E52A755E1B6078DE00090038 /* NetworkingManager+Knowledge.m */,
 			);
 			path = NetworkingManager;
 			sourceTree = "<group>";
@@ -1663,12 +1688,14 @@
 				E58A52361B57472500E5413D /* UserModel.m in Sources */,
 				E58A54551B57A44200E5413D /* AFURLConnectionOperation.m in Sources */,
 				E58A52A11B574B3800E5413D /* DHVector.m in Sources */,
+				E52A75621B60822500090038 /* KnowledgeModel.m in Sources */,
 				E58A52B71B574B3800E5413D /* DHDrawerViewController.m in Sources */,
 				E50905991B5C9551000FB9FE /* DHScanScrollView.m in Sources */,
 				E58A53EE1B57527400E5413D /* AssessmentViewController.m in Sources */,
 				E509058B1B5C9551000FB9FE /* DHImageTextButton.m in Sources */,
 				E58A54721B58ABCC00E5413D /* RegisterViewController.m in Sources */,
 				E50905921B5C9551000FB9FE /* DHGradientStepProgressView.m in Sources */,
+				E52A75681B60913A00090038 /* KnowledgeViewModel.m in Sources */,
 				E58A545B1B57A44200E5413D /* UIAlertView+AFNetworking.m in Sources */,
 				E509058A1B5C9551000FB9FE /* DHButton.m in Sources */,
 				E58A54601B57A44200E5413D /* UIWebView+AFNetworking.m in Sources */,
@@ -1696,6 +1723,7 @@
 				E556A7CC1B55F89A007CFCF5 /* AppDelegate.m in Sources */,
 				E556A7C91B55F89A007CFCF5 /* main.m in Sources */,
 				E50905901B5C9551000FB9FE /* CABasicAnimation+AnimationCompletionBlock.m in Sources */,
+				E52A755F1B6078DE00090038 /* NetworkingManager+Knowledge.m in Sources */,
 				E509058E1B5C9551000FB9FE /* DHInfoFillInView.m in Sources */,
 				E58A546E1B5897A400E5413D /* NetworkingManager+Login.m in Sources */,
 				E58A52A01B574B3800E5413D /* DHSystemAppNavigationTransition.m in Sources */,
@@ -1709,11 +1737,13 @@
 				E50905931B5C9551000FB9FE /* DHNormalProgressView.m in Sources */,
 				E58A529F1B574B3800E5413D /* DHPerspectiveTransition.m in Sources */,
 				E509058F1B5C9551000FB9FE /* DHInfoPresentationView.m in Sources */,
+				E52A75651B6087B600090038 /* KnowledgeCell.m in Sources */,
 				E58A54591B57A44200E5413D /* AFNetworkActivityIndicatorManager.m in Sources */,
 				E58A53EB1B57523D00E5413D /* MedicineViewController.m in Sources */,
 				E58A529A1B574B3800E5413D /* DHRequest.m in Sources */,
 				E58A53F21B5756D500E5413D /* LeftViewController.m in Sources */,
 				E58A54561B57A44200E5413D /* AFURLRequestSerialization.m in Sources */,
+				E5D5FA0B1B5F6D5500D73C0B /* QuestionBaseView.m in Sources */,
 				E58A52981B574B3800E5413D /* DHConvenienceAutoLayout.m in Sources */,
 				E58A54521B57A44200E5413D /* AFHTTPSessionManager.m in Sources */,
 				E50905941B5C9551000FB9FE /* DHProgressAnimation.m in Sources */,

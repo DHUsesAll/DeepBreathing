@@ -16,6 +16,7 @@
 @property (nonatomic, strong) NSString * sex;
 @property (nonatomic, strong) NSString * photo;
 @property (nonatomic, strong) NSString * token;
+@property (nonatomic, strong) NSString * password;
 
 
 + (UserModel *)defaultUser;

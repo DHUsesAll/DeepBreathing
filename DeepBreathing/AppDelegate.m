@@ -23,16 +23,12 @@ NSString * const kUserIdKey = @"kUserIdKey";
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
-    NSArray * array = @[@"李波",@"吕玉梅",@"蒲嘉欣",@"李玉辉",@"刘英群",@"肖文",@"刘艺前",@"李晓强",@"王振宇",@"唐德刚",@"唐明斌",@"罗野",@"肖攀",@"牛冠",@"陈立",@"陈伟",@"陈超",@"杜毅"];
-    NSInteger index = arc4random()%array.count;
-    
-    NSLog(@"%@",array[index]);
-    
-    
-    
 #if TARGET_IPHONE_SIMULATOR
-    [UserModel defaultUser].token = @"";
+    
+    [UserModel defaultUser].token = @"111111111";
+    
+    [[NSUserDefaults standardUserDefaults] setObject:[UserModel defaultUser].token forKey:@"DeviceToken"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
     
 #else
     if (([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0)) {
@@ -43,8 +39,8 @@ NSString * const kUserIdKey = @"kUserIdKey";
         [[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIRemoteNotificationTypeSound | UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeBadge)];
     }
 #endif
-    
-    [UserModel defaultUser].token = [[NSUserDefaults standardUserDefaults] objectForKey:@"DeviceToken"];
+    NSString * token = [[NSUserDefaults standardUserDefaults] objectForKey:@"DeviceToken"];
+    [UserModel defaultUser].token = token;
     
     if ([[NSUserDefaults standardUserDefaults] objectForKey:kUserIdKey]) {
         

@@ -9,6 +9,8 @@
 #ifndef DeepBreathing_PrefixHeader_pch
 #define DeepBreathing_PrefixHeader_pch
 
+#define BASE_URL    @"http://db.rimionline.com/"
+
 #define IMAGE_WITH_NAME(name) [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForAuxiliaryExecutable:name]]
 
 #define RGB_COLOR(r,g,b) [UIColor colorWithRed:r/255.f green:g/255.f blue:b/255.f alpha:1]

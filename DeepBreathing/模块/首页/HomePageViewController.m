@@ -19,8 +19,6 @@
 @property (nonatomic, strong) CAShapeLayer * maskLayer;
 // maskImageView下面的白色的视图
 @property (nonatomic, strong) UIView * bottomView;
-// 路径
-@property (nonatomic, strong) UIBezierPath * bezierPath;
 
 //
 @property (nonatomic, strong) UIView * resultView;
@@ -44,7 +42,6 @@
     
     UIView * containerView = [[HomePageQuestionManager defaultManager] questionContainerView];
     [self.view addSubview:containerView];
-//    containerView.hidden = YES;
     [self.view addSubview:self.resultView];
     
     UIButton * fillInButton = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -119,37 +116,10 @@
     return _maskLayer;
 }
 
-
-- (UIBezierPath *)bezierPath
-{
-    if (!_bezierPath) {
-        
-        CGFloat width = CGRectGetWidth(self.view.bounds);
-        
-        _bezierPath = ({
-            
-            
-            UIBezierPath * path = [UIBezierPath bezierPath];
-            
-            [path moveToPoint:CGPointMake(0, 0)];
-            [path addLineToPoint:[DHConvenienceAutoLayout centerWithiPhone5Center:CGPointMake(0, 315)]];
-            [path addQuadCurveToPoint:CGPointMake(width, 315*[DHConvenienceAutoLayout iPhone5VerticalMutiplier]) controlPoint:CGPointMake(width/2, 470*[DHConvenienceAutoLayout iPhone5VerticalMutiplier])];
-            [path addLineToPoint:CGPointMake(width, 0)];
-            
-            path;
-            
-        });
-        
-    }
-    
-    return _bezierPath;
-}
-
 #pragma mark - button action
 - (void)fillIn
 {
     UIView * containerView = [[HomePageQuestionManager defaultManager] questionContainerView];
-    containerView.hidden = NO;
     [UIView animateWithDuration:1.2 animations:^{
         [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromLeft forView:_resultView cache:NO];
     } completion:^(BOOL finished) {

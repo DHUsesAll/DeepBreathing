@@ -9,7 +9,7 @@
 #import "NetworkingManager.h"
 #import "AFNetworking.h"
 
-#define BASE_URL    @"http://db.rimionline.com/"
+
 
 @implementation NetworkingManager
 

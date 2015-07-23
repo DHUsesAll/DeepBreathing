@@ -16,6 +16,7 @@
 #import "MainTabViewController.h"
 #import "DHDrawerViewController.h"
 #import "LeftViewController.h"
+#import "NetworkingManager+Login.h"
 
 @interface LoginViewController ()
 
@@ -113,32 +114,17 @@
 
 - (void)onLogin:(UIButton *)sender
 {
-    // 各个模块controller的类名
-    NSArray * controllerClassNames = @[@"HomePageViewController",@"AssessmentViewController",@"MedicineViewController",@"KnowledgeViewController",@"AttendanceViewController"];
-    
-    // 传给tabController的controller数组
-    NSMutableArray * controllerArray = [NSMutableArray arrayWithCapacity:0];
-    
-    for (NSString * className in controllerClassNames) {
-        // 通过类名初始化controller
-        UIViewController * controller = [[NSClassFromString(className) alloc] init];
-        [controllerArray addObject:controller];
+    [NetworkingManager loginWithUserName:_usernameField.text password:_passwordField.text successHandler:^(id responseObj) {
         
-    }
-    
-    
-    // 初始化tabController
-    MainTabViewController * mainViewController = [[MainTabViewController alloc] initWithViewControllers:controllerArray];
-    
-    
-    // 初始化抽屉controller
-    // 因为某一个子controller push的效果是把整个tabController进行push，所以要把tabController作为一个navigationController的rootController
-    UINavigationController * naVC = [[UINavigationController alloc] initWithRootViewController:mainViewController];
-    naVC.navigationBar.hidden = YES;
-    
-    DHDrawerViewController * drawerViewController = [[DHDrawerViewController alloc] initWithMainViewContorller:naVC leftViewController:[[LeftViewController alloc] init] rightViewController:nil];
-    
-    [self.navigationController presentViewController:drawerViewController animated:YES completion:nil];
+        
+        
+        [UserModel defaultUser].phoneNumber = _usernameField.text;
+        [UserModel defaultUser].password = _passwordField.text;
+        
+        [self presentToMainViewController];
+    } failureHandler:^(NSError *error) {
+        
+    }];
 }
 
 - (void)onRegister:(UIButton *)sender
@@ -193,8 +179,40 @@
 }
 
 
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [self.view endEditing:YES];
+}
 
+- (void)presentToMainViewController
+{
+    // 各个模块controller的类名
+    NSArray * controllerClassNames = @[@"HomePageViewController",@"AssessmentViewController",@"MedicineViewController",@"KnowledgeViewController",@"AttendanceViewController"];
+    
+    // 传给tabController的controller数组
+    NSMutableArray * controllerArray = [NSMutableArray arrayWithCapacity:0];
+    
+    for (NSString * className in controllerClassNames) {
+        // 通过类名初始化controller
+        UIViewController * controller = [[NSClassFromString(className) alloc] init];
+        [controllerArray addObject:controller];
+        
+    }
+    
+    
+    // 初始化tabController
+    MainTabViewController * mainViewController = [[MainTabViewController alloc] initWithViewControllers:controllerArray];
+    
+    
+    // 初始化抽屉controller
+    // 因为某一个子controller push的效果是把整个tabController进行push，所以要把tabController作为一个navigationController的rootController
+    UINavigationController * naVC = [[UINavigationController alloc] initWithRootViewController:mainViewController];
+    naVC.navigationBar.hidden = YES;
+    
+    DHDrawerViewController * drawerViewController = [[DHDrawerViewController alloc] initWithMainViewContorller:naVC leftViewController:[[LeftViewController alloc] init] rightViewController:nil];
+    
+    [self.navigationController presentViewController:drawerViewController animated:YES completion:nil];
 
-
+}
 
 @end
