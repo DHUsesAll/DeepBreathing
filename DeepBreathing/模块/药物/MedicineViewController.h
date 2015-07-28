@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseNavigationController.h"
 
-@interface MedicineViewController : UIViewController
+@interface MedicineViewController : BaseNavigationController
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "AssessmentViewController.h"
+#import "AssessmentDetailViewController.h"
 
 @interface AssessmentViewController ()
 
@@ -16,22 +17,49 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self initializeAppearance];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)initializeAppearance
+{
+    UILabel * navigationBar = [[UILabel alloc] initWithFrame:[DHConvenienceAutoLayout frameWithLayoutOption:DHAutoLayoutOptionPosition|DHAutoLayoutOptionScale iPhone5Frame:CGRectMake(0, 0, 320, 64) adjustWidth:![DHFoundationTool iPhone4]]];
+    navigationBar.backgroundColor = [UIColor whiteColor];
+    navigationBar.text = @"评估管理";
+    navigationBar.textColor = THEME_TEXT_COLOR;
+    navigationBar.font = [UIFont systemFontOfSize:22*[DHConvenienceAutoLayout iPhone5VerticalMutiplier]];
+    navigationBar.textAlignment = NSTextAlignmentCenter;
+    [self.view addSubview:navigationBar];
+    
+    
+    UIButton * testButton = [UIButton buttonWithType:UIButtonTypeSystem];
+    
+    [testButton setBounds:[DHConvenienceAutoLayout frameWithLayoutOption:DHAutoLayoutOptionScale iPhone5Frame:CGRectMake(0, 0, 100, 100) adjustWidth:YES]];
+    [testButton setCenter:self.view.center];
+    
+    [testButton addTarget:self action:@selector(onTest:) forControlEvents:UIControlEventTouchUpInside];
+    
+    [testButton setBackgroundColor:THEME_TEXT_COLOR];
+    [[testButton layer] setMasksToBounds:YES];
+    [[testButton layer] setCornerRadius:CGRectGetWidth(testButton.bounds)/2];
+    
+    [testButton setTitle:@"开始\n测试" forState:UIControlStateNormal];
+    [testButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [testButton.titleLabel setFont:[UIFont systemFontOfSize:26*[DHConvenienceAutoLayout iPhone5VerticalMutiplier]]];
+    testButton.titleLabel.numberOfLines = 0;
+    
+    
+    [self.view addSubview:testButton];
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+#pragma mark - button action
+- (void)onTest:(UIButton *)sender
+{
+    [self.parentViewController.navigationController pushViewController:[[AssessmentDetailViewController alloc] initWithTitle:@"ACT评估"] animated:YES];
 }
-*/
+
+
+
+
 
 @end

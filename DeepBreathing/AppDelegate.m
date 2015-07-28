@@ -12,11 +12,12 @@
 #import "DHDrawerViewController.h"
 #import "MainTabViewController.h"
 #import "LeftViewController.h"
-
+#import "ViewController.h"
 
 NSString * const kUserIdKey = @"kUserIdKey";
 
 @interface AppDelegate ()
+
 
 @end
 
@@ -24,7 +25,6 @@ NSString * const kUserIdKey = @"kUserIdKey";
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 #if TARGET_IPHONE_SIMULATOR
-    
     [UserModel defaultUser].token = @"111111111";
     
     [[NSUserDefaults standardUserDefaults] setObject:[UserModel defaultUser].token forKey:@"DeviceToken"];
@@ -39,7 +39,10 @@ NSString * const kUserIdKey = @"kUserIdKey";
         [[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIRemoteNotificationTypeSound | UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeBadge)];
     }
 #endif
+
     NSString * token = [[NSUserDefaults standardUserDefaults] objectForKey:@"DeviceToken"];
+    
+    
     [UserModel defaultUser].token = token;
     
     if ([[NSUserDefaults standardUserDefaults] objectForKey:kUserIdKey]) {
@@ -60,6 +63,13 @@ NSString * const kUserIdKey = @"kUserIdKey";
         // 初始化tabController
         MainTabViewController * mainViewController = [[MainTabViewController alloc] initWithViewControllers:controllerArray];
         
+        NSMutableString * str = [NSMutableString stringWithFormat:@"str"];
+        
+        mainViewController.strongString = str;
+        mainViewController.strByCopy = str;
+        
+        [str appendString:@" appending"];
+        NSLog(@"%@ \n %@", mainViewController.strongString, mainViewController.strByCopy);
         
         // 初始化抽屉controller
         // 因为某一个子controller push的效果是把整个tabController进行push，所以要把tabController作为一个navigationController的rootController
@@ -70,6 +80,7 @@ NSString * const kUserIdKey = @"kUserIdKey";
         // 所以把抽屉controller作为navigationController的rootController
         self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:drawerViewController];
     }
+    
     
     [self.window makeKeyAndVisible];
     
@@ -83,6 +94,7 @@ NSString * const kUserIdKey = @"kUserIdKey";
             
             UIWindow * window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
             window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[LoginViewController alloc] init]];
+//            window.rootViewController = [[ViewController alloc] init];
             window;
             
         });

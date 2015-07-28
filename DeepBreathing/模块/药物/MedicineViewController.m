@@ -16,22 +16,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self initializeAppearance];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)initializeAppearance
+{
+    UILabel * navigationBar = [[UILabel alloc] initWithFrame:[DHConvenienceAutoLayout frameWithLayoutOption:DHAutoLayoutOptionPosition|DHAutoLayoutOptionScale iPhone5Frame:CGRectMake(0, 0, 320, 64) adjustWidth:![DHFoundationTool iPhone4]]];
+    navigationBar.backgroundColor = [UIColor whiteColor];
+    navigationBar.text = @"哮喘知识";
+    navigationBar.textColor = THEME_TEXT_COLOR;
+    navigationBar.font = [UIFont systemFontOfSize:22*[DHConvenienceAutoLayout iPhone5VerticalMutiplier]];
+    navigationBar.textAlignment = NSTextAlignmentCenter;
+    [self.view addSubview:navigationBar];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

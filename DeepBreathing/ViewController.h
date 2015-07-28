@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <NSCoding>
 
+@property (nonatomic, strong) NSString * name;
 
 @end
 

@@ -88,6 +88,8 @@
         _usernameField = ({
         
             UITextField * field = [self textFieldWithFrame:CGRectMake(80, 204, 180, 36) placeholder:@"请输入您的手机号"];
+            field.text = @"15208285159";
+
             field;
         
         });
@@ -101,7 +103,8 @@
         _passwordField = ({
         
             UITextField * field = [self textFieldWithFrame:CGRectMake(80, 246, 180, 36) placeholder:@"请输入密码"];
-            
+            field.secureTextEntry = YES;
+            field.text = @"123456";
             field;
         
         });
@@ -115,8 +118,6 @@
 - (void)onLogin:(UIButton *)sender
 {
     [NetworkingManager loginWithUserName:_usernameField.text password:_passwordField.text successHandler:^(id responseObj) {
-        
-        
         
         [UserModel defaultUser].phoneNumber = _usernameField.text;
         [UserModel defaultUser].password = _passwordField.text;
@@ -152,6 +153,7 @@
     UITextField * field = [[UITextField alloc] initWithFrame:[DHConvenienceAutoLayout frameWithLayoutOption:DHAutoLayoutOptionScale|DHAutoLayoutOptionPosition iPhone5Frame:frame adjustWidth:![DHFoundationTool iPhone4]]];
     
     field.placeholder = placeholder;
+    field.textColor = [UIColor whiteColor];
     [field setValue:[UIColor whiteColor] forKeyPath:@"_placeholderLabel.textColor"];
     
     field.leftView = [[UIView alloc] initWithFrame:[DHConvenienceAutoLayout frameWithLayoutOption:DHAutoLayoutOptionPosition|DHAutoLayoutOptionScale iPhone5Frame:CGRectMake(0, 0, 10, 36) adjustWidth:![DHFoundationTool iPhone4]]];
@@ -188,6 +190,8 @@
 {
     // 各个模块controller的类名
     NSArray * controllerClassNames = @[@"HomePageViewController",@"AssessmentViewController",@"MedicineViewController",@"KnowledgeViewController",@"AttendanceViewController"];
+    
+    
     
     // 传给tabController的controller数组
     NSMutableArray * controllerArray = [NSMutableArray arrayWithCapacity:0];

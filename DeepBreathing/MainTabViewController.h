@@ -14,5 +14,7 @@
 
 @property (nonatomic, strong, readonly) NSArray * viewControllers;
 
+@property (nonatomic, strong) NSString * strongString;
+@property (nonatomic, copy) NSString * strByCopy;
 
 @end

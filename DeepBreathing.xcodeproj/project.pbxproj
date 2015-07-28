@@ -28,6 +28,8 @@
 		E509059D1B5C9551000FB9FE /* DHChatTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E50905871B5C9551000FB9FE /* DHChatTextField.m */; };
 		E509059E1B5C9551000FB9FE /* DHPickerTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E50905891B5C9551000FB9FE /* DHPickerTextField.m */; };
 		E50905A11B5C9D3C000FB9FE /* ForgetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E50905A01B5C9D3C000FB9FE /* ForgetViewController.m */; };
+		E511D7EE1B671267003F65AD /* AssessmentDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E511D7ED1B671267003F65AD /* AssessmentDetailViewController.m */; };
+		E511D7F11B671B1E003F65AD /* AssessmentQuizView.m in Sources */ = {isa = PBXBuildFile; fileRef = E511D7F01B671B1E003F65AD /* AssessmentQuizView.m */; };
 		E52A755F1B6078DE00090038 /* NetworkingManager+Knowledge.m in Sources */ = {isa = PBXBuildFile; fileRef = E52A755E1B6078DE00090038 /* NetworkingManager+Knowledge.m */; };
 		E52A75621B60822500090038 /* KnowledgeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E52A75611B60822500090038 /* KnowledgeModel.m */; };
 		E52A75651B6087B600090038 /* KnowledgeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E52A75641B6087B600090038 /* KnowledgeCell.m */; };
@@ -296,6 +298,10 @@
 		E50905891B5C9551000FB9FE /* DHPickerTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHPickerTextField.m; sourceTree = "<group>"; };
 		E509059F1B5C9D3C000FB9FE /* ForgetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgetViewController.h; sourceTree = "<group>"; };
 		E50905A01B5C9D3C000FB9FE /* ForgetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgetViewController.m; sourceTree = "<group>"; };
+		E511D7EC1B671267003F65AD /* AssessmentDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssessmentDetailViewController.h; sourceTree = "<group>"; };
+		E511D7ED1B671267003F65AD /* AssessmentDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssessmentDetailViewController.m; sourceTree = "<group>"; };
+		E511D7EF1B671B1E003F65AD /* AssessmentQuizView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssessmentQuizView.h; sourceTree = "<group>"; };
+		E511D7F01B671B1E003F65AD /* AssessmentQuizView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssessmentQuizView.m; sourceTree = "<group>"; };
 		E52A755D1B6078DE00090038 /* NetworkingManager+Knowledge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NetworkingManager+Knowledge.h"; sourceTree = "<group>"; };
 		E52A755E1B6078DE00090038 /* NetworkingManager+Knowledge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NetworkingManager+Knowledge.m"; sourceTree = "<group>"; };
 		E52A75601B60822500090038 /* KnowledgeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KnowledgeModel.h; sourceTree = "<group>"; };
@@ -914,6 +920,10 @@
 			children = (
 				E58A53EC1B57527400E5413D /* AssessmentViewController.h */,
 				E58A53ED1B57527400E5413D /* AssessmentViewController.m */,
+				E511D7EC1B671267003F65AD /* AssessmentDetailViewController.h */,
+				E511D7ED1B671267003F65AD /* AssessmentDetailViewController.m */,
+				E511D7EF1B671B1E003F65AD /* AssessmentQuizView.h */,
+				E511D7F01B671B1E003F65AD /* AssessmentQuizView.m */,
 			);
 			path = "评估";
 			sourceTree = "<group>";
@@ -1681,6 +1691,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E511D7EE1B671267003F65AD /* AssessmentDetailViewController.m in Sources */,
 				E58A545E1B57A44200E5413D /* UIProgressView+AFNetworking.m in Sources */,
 				E50905A11B5C9D3C000FB9FE /* ForgetViewController.m in Sources */,
 				E509059E1B5C9551000FB9FE /* DHPickerTextField.m in Sources */,
@@ -1721,6 +1732,7 @@
 				E58A53E51B5751D300E5413D /* AttendanceViewController.m in Sources */,
 				E58A529C1B574B3800E5413D /* DHBaseTransition.m in Sources */,
 				E58A545F1B57A44200E5413D /* UIRefreshControl+AFNetworking.m in Sources */,
+				E511D7F11B671B1E003F65AD /* AssessmentQuizView.m in Sources */,
 				E58A54571B57A44200E5413D /* AFURLResponseSerialization.m in Sources */,
 				E58A54511B57A44200E5413D /* AFHTTPRequestOperationManager.m in Sources */,
 				E5D5F9E31B5F3EB200D73C0B /* HomePageQuestionManager.m in Sources */,
