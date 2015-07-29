@@ -61,7 +61,7 @@
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
 {
     if ([keyPath isEqualToString:@"knowledgeData"]) {
-        
+        // 调用viewModel的方法来处理所有数据
         [self.viewModel prepareWithData:self.model.knowledgeData];
         
         if (![self.viewModel isRequestSuccess]) {

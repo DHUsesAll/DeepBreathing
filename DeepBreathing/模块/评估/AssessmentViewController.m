@@ -18,6 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self initializeAppearance];
+    
 }
 
 - (void)initializeAppearance
@@ -46,7 +47,7 @@
     [testButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [testButton.titleLabel setFont:[UIFont systemFontOfSize:26*[DHConvenienceAutoLayout iPhone5VerticalMutiplier]]];
     testButton.titleLabel.numberOfLines = 0;
-    
+
     
     [self.view addSubview:testButton];
 }

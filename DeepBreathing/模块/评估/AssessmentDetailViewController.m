@@ -21,11 +21,11 @@
 // 显示当前第几题的label
 @property (nonatomic, strong) UILabel * quizIndexLabel;
 
-// 锚点
-@property (nonatomic, assign) CGPoint anchorPoint;
-
 // 所有quizView的容器
 @property (nonatomic, strong) UIView * containerView;
+
+// 容器的锚点
+@property (nonatomic, assign) CGPoint anchorPoint;
 
 @end
 
@@ -56,6 +56,7 @@
     [self.view.layer addSublayer:lineLayer];
     self.lineLayer = lineLayer;
     
+    // 在小球下方的曲线
     UIBezierPath * linePath = ({
     
         UIBezierPath * path = [UIBezierPath bezierPath];
@@ -72,6 +73,7 @@
     [self.view addSubview:self.ballView];
     [self.view addSubview:self.containerView];
     
+    // 一个左划手势，一个右滑手势
     UISwipeGestureRecognizer * leftSwipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(onSwipe:)];
     leftSwipe.direction =UISwipeGestureRecognizerDirectionLeft;
     [self.view addGestureRecognizer:leftSwipe];
@@ -178,23 +180,32 @@
 - (void)onSwipe:(UISwipeGestureRecognizer *)gesture
 {
     if (gesture.direction == UISwipeGestureRecognizerDirectionLeft) {
+        if (_quizIndex == 4) {
+            return;
+        }
         _quizIndex++;
     } else if (gesture.direction == UISwipeGestureRecognizerDirectionRight) {
+        if (_quizIndex==0) {
+            return;
+        }
         _quizIndex--;
     }
     
-    [UIView animateWithDuration:1 delay:0 usingSpringWithDamping:0.86 initialSpringVelocity:10 options:UIViewAnimationOptionCurveEaseInOut animations:^{
-        
+    [UIView animateWithDuration:1 delay:0 usingSpringWithDamping:0.78 initialSpringVelocity:10 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+        // 通过旋转整个containerView来旋转所有的问题的视图
         self.containerView.transform = CGAffineTransformMakeRotation(_quizIndex*M_PI/6);
         
     } completion:^(BOOL finished) {
         
     }];
     
+    // 小球动画
     [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
+        // 向上
         self.ballView.frame = CGRectOffset(self.ballView.frame, 0, -100*[DHConvenienceAutoLayout iPhone5VerticalMutiplier]);
     } completion:^(BOOL finished) {
-        [UIView animateWithDuration:0.3 delay:0 usingSpringWithDamping:0.86 initialSpringVelocity:10 options:UIViewAnimationOptionCurveEaseOut animations:^{
+        [UIView animateWithDuration:0.3 delay:0 usingSpringWithDamping:1 initialSpringVelocity:10 options:UIViewAnimationOptionCurveEaseOut animations:^{
+            // 向下
             self.ballView.frame = CGRectOffset(self.ballView.frame, 0, 100*[DHConvenienceAutoLayout iPhone5VerticalMutiplier]);
         } completion:^(BOOL finished) {
             

@@ -119,7 +119,12 @@
 #pragma mark - button action
 - (void)fillIn
 {
+    [HomePageQuestionManager defaultManager].noBlock = ^(){
+        _resultView.hidden = NO;
+    };
+    // 从resultView切换到questionView
     UIView * containerView = [[HomePageQuestionManager defaultManager] questionContainerView];
+    containerView.hidden = NO;
     [UIView animateWithDuration:1.2 animations:^{
         [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromLeft forView:_resultView cache:NO];
     } completion:^(BOOL finished) {

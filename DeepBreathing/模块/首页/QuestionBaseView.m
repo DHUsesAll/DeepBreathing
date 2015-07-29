@@ -16,6 +16,11 @@
 
 @implementation QuestionBaseView
 
+- (void)dealloc
+{
+    NSLog(@"%@ dealloc",self);
+}
+
 
 #pragma mark - getter
 - (UISwipeGestureRecognizer *)swipeGesture

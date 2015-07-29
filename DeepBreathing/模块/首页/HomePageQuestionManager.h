@@ -12,6 +12,7 @@
 
 // 4个问题加载到该view上
 @property (nonatomic, strong, readonly) UIView * questionContainerView;
+@property (nonatomic, copy) void (^noBlock)();
 
 // 单例
 + (HomePageQuestionManager *)defaultManager;
